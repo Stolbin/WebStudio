@@ -252,14 +252,7 @@ ul
     width: 1600px;
     height: 252px;
     left: 0px;
-    top: 2097px;
-    background: #2F303A;
-}.footer-port
-{
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 1628px;
+    margin-top: 0px;
     background: #2F303A;
 }
 .footer-logo

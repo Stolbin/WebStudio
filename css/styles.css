@@ -31,6 +31,8 @@ ul
 {
     width: 145px;
     height: 31px;
+    margin-left: 215px;
+    margin-top: 24px;
     text-decoration: none;    
 }
 .nav-logo1 
@@ -40,8 +42,6 @@ ul
     font-size: 26px;
     line-height: 100%;
     letter-spacing: 0.03em;
-    margin-left: 215px;
-    margin-top: 24px;
     color: #2196F3;
 }
 .nav-logo2 
@@ -55,6 +55,9 @@ ul
     color: #000000;
 }
 .header-nav-tex
+{
+} 
+.header-nav
 {
     font-family: 'Roboto';
     font-style: normal;
@@ -72,14 +75,16 @@ ul
     display: flex;
     gap: 50px;
     margin-left: 453px;
-    margin-top: 32px;
+    margin-top: 0px;
 }
 .header-cont
 {    
     display: flex;
     margin-left: 1078px;
     gap: 50px;
-    margin-top: 32px;
+   }
+.header-cont-tex
+{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -88,7 +93,7 @@ ul
     text-decoration: none;
     color: #757575;
 }
-.header-nav1:hover,.header-nav2:hover,.header-nav3:hover,.header-cont1:hover,.header-cont2:hover
+.header-nav:hover,.header-cont-tex:hover
 {
     color: #2196F3;
 }
@@ -98,7 +103,7 @@ ul
     width: 1600px;
     height: 600px;
     left: 0px;
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .main-hero-h1 
 {

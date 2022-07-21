@@ -1,142 +1,106 @@
 body
+{
+    font-family: 'Roboto' sans-serif;
+    background-color: #E5E5E5;
+}
+.visually-hidden 
+{
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
 ul 
 {
-    list-style: none;
+    list-style: none;   
 }
 .header
 {
-    position: absolute;
     width: 1600px;
     height: 80px;
     left: 0px;
     top: 0px;
+    background-color:  #FFFFFF;
 }
 .header-logo
 {
-    position: absolute;
     width: 145px;
     height: 31px;
-    left: 215px;
-    top: 24px;
     text-decoration: none;    
 }
-.nav-logo1 {
+.nav-logo1 
+{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
+    line-height: 100%;
     letter-spacing: 0.03em;
+    margin-left: 215px;
+    margin-top: 24px;
     color: #2196F3;
 }
-.nav-logo2 {
+.nav-logo2 
+{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
-    /* identical to box height */
+    line-height: 100%;
     letter-spacing: 0.03em;
+    margin-top: 64px;
     color: #000000;
 }
-.header-nav {
-    color: #212121;
-    font-family: 'Roboto';
-    font-style: normal;
+/* .header-nav 
+{
+    font-family: 'Roboto' sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 100%;
     letter-spacing: 0.02em;
-    position: absolute;
     width: 294px;
     height: 16px;
-    left: 453px;
-    top: 32px;
+    color: #212121;
+    cursor: pointer;
+} */
+.header-nav-tex
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #212121;
+    cursor: pointer;
+} 
+.position-nav
+{
+    display: flex;
+    gap: 50px;
+    margin-left: 453px;
+    margin-top: 32px;
 }
-a:hover
+.header-cont
+{    
+    display: flex;
+    margin-left: 1078px;
+    gap: 50px;
+    margin-top: 0px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
+}
+.header-nav1:hover,.header-nav2:hover,.header-nav3:hover,.header-cont1:hover,.header-cont2:hover
 {
     color: #2196F3;
-}
-.header-nav1
-{
-    position: absolute;
-    width: 49px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-}
-.header-nav2
-{
-    position: absolute;
-    width: 76px;
-    height: 16px;
-    left: 552px;
-    top: 32px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-}
-.header-nav3
-{
-    position: absolute;
-    width: 68px;
-    height: 16px;
-    left: 679px;
-    top: 32px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #212121;
-    text-decoration: none;
-}
-.header-cont1
-{  
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
-    color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-.header-cont2 
-{
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
-    color: #757575;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    text-decoration: none;
 }
 .main-hero {
     background-color: #2F303A;
@@ -144,20 +108,18 @@ a:hover
     width: 1600px;
     height: 600px;
     left: 0px;
-    top: 80px;
+    margin-top: 80px;
 }
 .main-hero-h1 
 {
-    position: absolute;
     width: 696px;
     height: 120px;
-    left: 452px;
-    top: 200px;
-    font-family: 'Roboto';
-    font-style: normal;
+    margin-top: 200px;
+    margin-left: 452px;
+    font-family: 'Roboto' sans-serif;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 116%;
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
@@ -166,76 +128,65 @@ a:hover
 }
 .main-hero-btn 
 {
-    position: absolute;
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 360px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family:  'Roboto' sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
+    line-height: 160%;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    margin-bottom: 200px;
+    margin-left: 700px;
+    border: none;
+}
+.main-hero-btn:hover 
+{
+    color: #188CE8;
+    background-color: #2196F3;
+    cursor: pointer;
 }
 .about
 {
     display: flex;
-    position: absolute;
     width: 1170px;
     height: 101px;
-    left: 215px;
-    top: 774px;
+    margin-left: 215px;
+    margin-top: 774px;
 }
 .main-about-h3
 {
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 94px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 100%;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 .main-about-p
 {
-    width: 270px;
-    height: 75px;
-    left: 215px;
-    top: 120px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto' sans-serif;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
+    line-height: 146%;
     letter-spacing: 0.03em;
     color: #757575;
 }
 .projects-h2
 {
-    position: absolute;
     width: 377px;
     height: 42px;
     left: 612px;
     top: 969px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -246,7 +197,6 @@ a:hover
  }
 .projects-img1
 {
-    position: absolute;
     width: 370px;
     height: 294px;
     left: 215px;
@@ -254,7 +204,6 @@ a:hover
 }
 .projects-img2
 {
-    position: absolute;
     width: 370px;
     height: 294px;
     left: 615px;
@@ -262,7 +211,6 @@ a:hover
 }
 .projects-img3 
 {
-    position: absolute;
     width: 370px;
     height: 294px;
     left: 1015px;
@@ -271,7 +219,6 @@ a:hover
 .team
 {
     background-color: #F5F4FA;
-    position: absolute;
     width: 1600px;
     height: 648px;
     left: 0px;
@@ -279,16 +226,14 @@ a:hover
 }
 .team-h2
 {
-    position: absolute;
     width: 265px;
     height: 42px;
     left: 668px;
     top: 74px;
-    font-family: 'Roboto';
-    font-style: normal;
+    font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -297,47 +242,21 @@ a:hover
 {
     display: flex;
     margin-left: 150px;
-}
-.team-pd
-{
-    position: absolute;
     width: 270px;
     height: 368px;
-    left: 215px;
+    left: 0px;
     top: 186px;
 }
-.team-fd
+.team-fd,.team-mar,.team-des
 {
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 515px;
-    top: 186px;
-}
-.team-mar
-{
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 815px;
-    top: 186px;
-}
-.team-des
-{
-    position: absolute;
-    width: 270px;
-    height: 368px;
-    left: 1115px;
-    top: 186px;
+    margin-left: 30px;
 }
 .team-ppl-name
 {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -345,80 +264,68 @@ a:hover
 .team-ppl-position
 {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    /* identical to box height */
+    line-height: 100%;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 }
 .footer
 {
-    position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2097px;
-    position: absolute;
     width: 1600px;
     height: 252px;
     left: 0px;
     top: 2097px;
     background: #2F303A;
+}.footer-port
+{
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 1628px;
+    background: #2F303A;
 }
 .footer-logo
 {
-    position: absolute;
     width: 145px;
     height: 31px;
     left: 215px;
-    top: 60px;
+    margin-top: 60px;
     text-decoration: none;
 }
 .adress-logo1 {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 100%;
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #2196F3;
 }
 
 .adress-logo2 {
-    font-family: 'Raleway';
+    font-family: 'Raleway' sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 100%;
     /* identical to box height */
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-/* .footer-adress
-{
-    position: absolute;
-    width: 231px;
-    height: 81px;
-    left: 215px;
-    top: 111px;
-    
-} */
 .footer-adress2
 {
-    position: absolute;
     width: 231px;
     height: 21px;
     left: 215px;
-    top: 111px;
-    font-family: 'Roboto';
+    margin-top: 111px;
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 146%;
     /* or 171% */
     letter-spacing: 0.03em;
     color: #FFFFFF;
@@ -426,16 +333,15 @@ a:hover
 }
 .footer-adress-mail
 {
-    position: absolute;
     width: 231px;
     height: 21px;
     left: 215px;
-    top: 141px;
-    font-family: 'Roboto';
+    margin-top: 141px;
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 146%;
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
@@ -443,18 +349,91 @@ a:hover
 }
 .footer-adress-tel 
 {
-    position: absolute;
     width: 231px;
     height: 21px;
     left: 215px;
-    top: 171px;
-    font-family: 'Roboto';
+    margin-top: 171px;
+    font-family: 'Roboto' sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 146%;
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+.port-buttons
+{
+    display: flex;
+    width: 611px;
+    height: 54px;
+    left: 495px;
+    top: 174px;
+    
+}
+.port-but1,.port-but2,.port-but3,.port-but4,.port-but5
+{
+    font-family: 'Roboto' sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 139%;
+    align-items: center;
+    vertical-align: top;
+    letter-spacing: 3%;
+    margin-right: 8px;
+    background: #F5F4FA;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border: none;
+}
+.port-but1:hover,.port-but2:hover,.port-but3:hover,.port-but4:hover,.port-but5:hover
+{
+    background-color: #188CE8;
+    color: #FFFFFF;
+}
+.prot-h3
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 171%;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.port-p
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+html
+head
+header
+main
+{
+    min-height: 100%;
+}
+.port-projects-container
+{  
+    max-width: 1170px;
+    margin-left: 215px;
+    margin-top: 262px;
+}
+.port-projects-card-set
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;
+  }
+.port-proj-item
+{
+    flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
+    height: 404px;
 }

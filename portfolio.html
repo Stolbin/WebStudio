@@ -7,13 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>WebStudio-Portfolio</title>
+    <title>WebStudio</title>
   </head>
-
   <body>
     <header class="header">
       <!-- Top bar -->
@@ -45,115 +44,124 @@
         </li>
       </ul>
     </header>
-    <main>
+    <main class="main">
       <section>
         <h1 hidden>projects</h1>
         <!-- Buttons -->
-        <ul>
-          <li><input type="button" value="Все" /></li>
-          <li><input type="button" value="Веб-сайты" /></li>
-          <li><input type="button" value="Приложения" /></li>
-          <li><input type="button" value="Дизайн" /></li>
-          <li><input type="button" value="Маркетинг" /></li>
+        <ul class="port-buttons">
+          <li><button type="button" class="port-but1">Все</button></li>
+          <li><button type="button" class="port-but2">Веб-сайты</button></li>
+          <li><button type="button" class="port-but3">Приложения</button></li>
+          <li><button type="button" class="port-but4">Дизайн</button></li>
+          <li><button type="button" class="port-but5">Маркетинг</button></li>
         </ul>
       </section>
       <!-- Projects -->
-      <section>
-        <ul>
-          <li>
+      <section class="port-projects-container">
+        <ul class="port-projects-card-set">
+          <li class="port-projects-item" >
             <img
               src="./images/img_work_1.jpg"
               width="370"
               height="294"
               alt="project1"
+              class="port-proj1"
             />
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
+            <h3 class="port-h3">Технокряк</h3>
+            <p class="port-p">Веб-сайт</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_2.jpg"
               width="370"
               height="294"
               alt="project2"
+              class="port-proj2"
             />
-            <h3>Постер New Orlean vs Golden Star</h3>
-            <p>Дизайн</p>
+            <h3 class="port-h3">Постер New Orlean vs Golden Star</h3>
+            <p class="port-p">Дизайн</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_3.jpg"
               width="370"
               height="294"
               alt="project3"
+              class="port-proj3"
             />
-            <h3>Ресторан Seafood</h3>
-            <p>Приложение</p>
+            <h3 class="port-h3">Ресторан Seafood</h3>
+            <p class="port-p">Приложение</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_4.jpg"
               width="370"
               height="294"
               alt="project4"
+              class="port-proj4"
             />
-            <h3>Проект Prime</h3>
-            <p>Маркетинг</p>
+            <h3 class="port-h3">Проект Prime</h3>
+            <p class="port-p">Маркетинг</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_5.jpg"
               width="370"
               height="294"
               alt="project5"
+              class="port-proj5"
             />
-            <h3>Проект Boxes</h3>
-            <p>Приложение</p>
+            <h3 class="port-h3">Проект Boxes</h3>
+            <p class="port-p">Приложение</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_6.jpg"
               width="370"
               height="294"
               alt="project6"
+              class="port-proj6"
             />
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
+            <h3 class="port-h3">Inspiration has no Borders</h3>
+            <p class="port-p">Веб-сайт</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_7.jpg"
               width="370"
               height="294"
               alt="project7"
+              class="port-proj7"
             />
-            <h3>Издание Limited Edition</h3>
-            <p>Дизайн</p>
+            <h3 class="port-h3">Издание Limited Edition</h3>
+            <p class="port-p">Дизайн</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_8.jpg"
               width="370"
               height="294"
               alt="project8"
+              class="port-proj8"
             />
-            <h3>Проект LAB</h3>
-            <p>Маркетинг</p>
+            <h3 class="port-h3">Проект LAB</h3>
+            <p class="port-p">Маркетинг</p>
           </li>
-          <li>
+          <li class="port-proj-item" >
             <img
               src="./images/img_work_9.jpg"
               width="370"
               height="294"
               alt="project9"
+              class="port-proj1"
             />
-            <h3>Growing Business</h3>
-            <p>Приложение</p>
+            <h3 class="port-h3">Growing Business</h3>
+            <p class="port-p">Приложение</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer-port">
       <a href="./index.html" class="footer-logo"
         ><span class="adress-logo1">Web</span
         ><span class="adress-logo2">Studio</span></a

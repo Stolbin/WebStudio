@@ -340,7 +340,7 @@ ul
 }
 .port-but1,.port-but2,.port-but3,.port-but4,.port-but5
 {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -361,6 +361,7 @@ ul
 }
 .prot-h3
 {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -370,6 +371,7 @@ ul
 }
 .port-p
 {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

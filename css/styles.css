@@ -181,8 +181,8 @@ ul
 {
     width: 377px;
     height: 42px;
-    left: 612px;
-    top: 969px;
+    margin-left: 612px;
+    margin-top: 94px;
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -194,42 +194,25 @@ ul
 .projects-imgs
 {
     display: flex;
+    margin-left: 215px;
+    margin-top: 50px;
+    gap: 30px;
  }
-.projects-img1
-{
-    width: 370px;
-    height: 294px;
-    left: 215px;
-    top: 1061px;
-}
-.projects-img2
-{
-    width: 370px;
-    height: 294px;
-    left: 615px;
-    top: 1061px;
-}
-.projects-img3 
-{
-    width: 370px;
-    height: 294px;
-    left: 1015px;
-    top: 1061px;
-}
+
 .team
 {
     background-color: #F5F4FA;
     width: 1600px;
     height: 648px;
     left: 0px;
-    top: 1449px;
+    
 }
 .team-h2
 {
     width: 265px;
     height: 42px;
     left: 668px;
-    top: 74px;
+    margin-top: 94px;
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 36px;
@@ -245,7 +228,7 @@ ul
     width: 270px;
     height: 368px;
     left: 0px;
-    top: 186px;
+    margin-top: 186px;
 }
 .team-fd,.team-mar,.team-des
 {

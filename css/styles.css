@@ -54,9 +54,6 @@ ul
     margin-top: 64px;
     color: #000000;
 }
-.header-nav-tex
-{
-} 
 .header-nav
 {
     font-family: 'Roboto';
@@ -65,7 +62,6 @@ ul
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0.02em;
-    margin-top: 32px;
     color: #212121;
     cursor: pointer;
     text-decoration: none;
@@ -75,10 +71,10 @@ ul
     display: flex;
     gap: 50px;
     margin-left: 453px;
-    margin-top: 0px;
+    margin-top: -32px;
 }
 .header-cont
-{    
+{   
     display: flex;
     gap: 50px;
     margin-left: 1078px;
@@ -98,12 +94,13 @@ ul
 {
     color: #2196F3;
 }
-.main-hero {
-    background-color: #2F303A;
+.main-hero 
+{
     position: absolute;
+    background-color: #2F303A;
     width: 1600px;
     height: 600px;
-    left: 0px;
+    margin-left: 0px;
     margin-top: 0px;
 }
 .main-hero-h1 

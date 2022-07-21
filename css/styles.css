@@ -205,19 +205,16 @@ ul
     width: 1600px;
     height: 648px;
     left: 0px;
-    
+    margin-top: 94px;    
 }
 .team-h2
 {
-    width: 265px;
-    height: 42px;
-    left: 668px;
-    margin-top: 94px;
+    margin-left: 668px;
+    margin-top: 94px; 
     font-family: 'Roboto' sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
-    text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }

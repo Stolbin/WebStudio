@@ -54,18 +54,6 @@ ul
     margin-top: 64px;
     color: #000000;
 }
-/* .header-nav 
-{
-    font-family: 'Roboto' sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-    width: 294px;
-    height: 16px;
-    color: #212121;
-    cursor: pointer;
-} */
 .header-nav-tex
 {
     font-family: 'Roboto';
@@ -74,8 +62,10 @@ ul
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 0.02em;
+    margin-top: 32px;
     color: #212121;
     cursor: pointer;
+    text-decoration: none;
 } 
 .position-nav
 {
@@ -89,7 +79,7 @@ ul
     display: flex;
     margin-left: 1078px;
     gap: 50px;
-    margin-top: 0px;
+    margin-top: 32px;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
@@ -116,7 +106,7 @@ ul
     height: 120px;
     margin-top: 200px;
     margin-left: 452px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
     line-height: 116%;
@@ -130,7 +120,7 @@ ul
 {
     width: 200px;
     height: 50px;
-    font-family:  'Roboto' sans-serif;
+    font-family:  'Roboto';
     font-weight: 700;
     font-size: 16px;
     line-height: 160%;
@@ -160,7 +150,7 @@ ul
 }
 .main-about-h3
 {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 100%;
@@ -170,7 +160,7 @@ ul
 }
 .main-about-p
 {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 146%;
@@ -183,7 +173,7 @@ ul
     height: 42px;
     margin-left: 612px;
     margin-top: 94px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
@@ -211,7 +201,7 @@ ul
 {
     margin-left: 668px;
     margin-top: 94px; 
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 100%;
@@ -276,7 +266,7 @@ ul
 }
 .adress-logo1 
 {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -286,7 +276,7 @@ ul
 }
 
 .adress-logo2 {
-    font-family: 'Raleway' sans-serif;
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -301,7 +291,7 @@ ul
     height: 21px;
     margin-left: 215px;
     margin-top: 111px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -316,7 +306,7 @@ ul
     height: 21px;
     margin-left: 215px;
     margin-top: 141px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -331,7 +321,7 @@ ul
     height: 21px;
     margin-left: 215px;
     margin-top: 171px;
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -345,8 +335,8 @@ ul
     display: flex;
     width: 611px;
     height: 54px;
-    left: 495px;
-    top: 174px;
+    margin-left: 495px;
+    margin-top: 94px;
     
 }
 .port-but1,.port-but2,.port-but3,.port-but4,.port-but5
@@ -388,18 +378,11 @@ ul
     letter-spacing: 0.03em;
     color: #757575;
 }
-/* html
-head
-header
-main
-{
-    min-height: 100%;
-} */
 .port-projects-container
 {  
     max-width: 1170px;
     margin-left: 215px;
-    margin-top: 262px;
+    margin-top: 34px;
 }
 .port-projects-card-set
 {
@@ -407,7 +390,7 @@ main
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
-  }
+}
 .port-proj-item
 {
     flex-basis: calc((100% - 60px) / 3);

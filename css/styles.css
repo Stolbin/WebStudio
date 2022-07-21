@@ -80,8 +80,9 @@ ul
 .header-cont
 {    
     display: flex;
-    margin-left: 1078px;
     gap: 50px;
+    margin-left: 1078px;
+    margin-top: -32px;
    }
 .header-cont-tex
 {

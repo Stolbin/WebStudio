@@ -1,6 +1,7 @@
 body
 {
     font-family: 'Roboto' sans-serif;
+    font-style: normal;
     background-color: #E5E5E5;
 }
 .visually-hidden 
@@ -21,26 +22,21 @@ ul
 }
 .header
 {
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
     background-color:  #FFFFFF;
 }
-.header-logo
+.footer-logo, .link-port-proj, .header-logo, .footer-adress-tel, .footer-adress-mail, .footer-adress-tel, .footer-adress2, .header-nav, .header-cont-link, .header-cont-tex
 {
-    width: 145px;
-    height: 31px;
-    margin-left: 215px;
-    margin-top: 24px;
-    text-decoration: none;    
+    text-decoration: none;
 }
+/* .header-logo
+{   
+} */
 .nav-logo1 
 {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
 }
@@ -49,71 +45,55 @@ ul
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 1.19;
     letter-spacing: 0.03em;
-    margin-top: 64px;
     color: #000000;
 }
-.header-nav
+.header-nav-text
 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
     cursor: pointer;
-    text-decoration: none;
-} 
-.position-nav
+}
+/* .header-position-nav
 {
     display: flex;
     gap: 50px;
     margin-left: 453px;
     margin-top: -32px;
+} */
+.header-cont-tex
+{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    cursor: pointer;
 }
-.header-cont
+/* .header-position-cont
 {   
     display: flex;
     gap: 50px;
     margin-left: 1078px;
     margin-top: -32px;
-   }
-.header-cont-tex
-{
-    font-family: 'Roboto';
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    color: #757575;
-}
+} */
 .header-nav:hover,.header-cont-tex:hover
 {
     color: #2196F3;
 }
 .main-hero 
 {
-    position: absolute;
     background-color: #2F303A;
-    width: 1600px;
-    height: 600px;
-    margin-left: 0px;
-    margin-top: 0px;
 }
 .main-hero-h1 
 {
-    width: 696px;
-    height: 120px;
-    margin-top: 200px;
-    margin-left: 452px;
-    font-family: 'Roboto';
     font-weight: 900;
     font-size: 44px;
-    line-height: 116%;
-    /* or 136% */
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -121,20 +101,15 @@ ul
 }
 .main-hero-btn 
 {
-    width: 200px;
-    height: 50px;
-    font-family:  'Roboto';
     font-weight: 700;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 1.88;
     align-items: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    margin-bottom: 200px;
-    margin-left: 700px;
     border: none;
 }
 .main-hero-btn:hover 
@@ -143,130 +118,87 @@ ul
     background-color: #2196F3;
     cursor: pointer;
 }
-.about
+/* .about
 {
     display: flex;
-    width: 1170px;
-    height: 101px;
-    margin-left: 215px;
-    margin-top: 774px;
-}
+} */
 .main-about-h3
 {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
-    line-height: 100%;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #212121;
 }
 .main-about-p
 {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
-    line-height: 146%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
 }
 .projects-h2
 {
-    width: 377px;
-    height: 42px;
-    margin-left: 612px;
-    margin-top: 94px;
     font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
-.projects-imgs
+/* .projects-imgs
 {
     display: flex;
-    margin-left: 215px;
-    margin-top: 50px;
     gap: 30px;
- }
-
+} */
 .team
 {
-    background-color: #F5F4FA;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    margin-top: 94px;    
+    background-color: #F5F4FA;   
 }
 .team-h2
 {
-    margin-left: 668px;
-    margin-top: 94px; 
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
-    line-height: 100%;
+    line-height: 1.17;
     letter-spacing: 0.03em;
+    text-align: center;
     color: #212121;
 }
 .team-ppl
 {
     display: flex;
-    margin-left: 150px;
-    width: 270px;
-    height: 368px;
-    left: 0px;
-    margin-top: 186px;
-}
-.team-fd,.team-mar,.team-des
-{
-    margin-left: 30px;
+    gap: 30px;
 }
 .team-ppl-name
 {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 100%;
+    line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
 }
 .team-ppl-position
 {
-    font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
 }
 .footer
 {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    margin-top: 0px;
     background: #2F303A;
-}
-.footer-logo
-{
-    width: 145px;
-    height: 31px;
-    margin-left: 240px;
-    margin-top: 60px;
-    text-decoration: none;
 }
 .adress-logo1 
 {
-    font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 100%;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: #2196F3;
 }
@@ -276,72 +208,50 @@ ul
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 100%;
-    /* identical to box height */
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
 .footer-adress2
 {
-    width: 231px;
-    height: 21px;
-    margin-left: 215px;
-    margin-top: 111px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-    color: #FFFFFF;
-    text-decoration: none;    
+    color: #FFFFFF;  
 }
 .footer-adress-mail
 {
-    width: 231px;
-    height: 21px;
-    margin-left: 215px;
-    margin-top: 141px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
 }
 .footer-adress-tel 
 {
-    width: 231px;
-    height: 21px;
-    margin-left: 215px;
-    margin-top: 171px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 171%;
+    line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
 }
-.port-buttons
+/* .port-buttons
 {
     display: flex;
-    width: 611px;
-    height: 54px;
-    margin-left: 495px;
-    margin-top: 94px;
-    
-}
+    gap: 8px;  
+} */
 .port-but1,.port-but2,.port-but3,.port-but4,.port-but5
 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 139%;
+    line-height: 1.63;
     align-items: center;
     vertical-align: top;
     letter-spacing: 3%;
@@ -356,42 +266,38 @@ ul
     background-color: #188CE8;
     color: #FFFFFF;
 }
+/* .port-projects-container
+{  
+    max-width: 1170px;
+    margin-left: 215px;
+    margin-top: 34px;
+} */
+/* .port-projects-card-set
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0;    
+} */
+/* .port-proj-item
+{
+    flex-basis: calc((100% - 60px) / 3);
+    width: 370px;
+    height: 404px;
+} */
 .prot-h3
 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 171%;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
 }
 .port-p
 {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 160%;
+    line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
-}
-.port-projects-container
-{  
-    max-width: 1170px;
-    margin-left: 215px;
-    margin-top: 34px;
-}
-.port-projects-card-set
-{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    padding: 0;
-}
-.port-proj-item
-{
-    flex-basis: calc((100% - 60px) / 3);
-    width: 370px;
-    height: 404px;
 }

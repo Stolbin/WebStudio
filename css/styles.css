@@ -81,7 +81,7 @@ ul
     margin-left: 1078px;
     margin-top: -32px;
 } */
-.header-nav:hover,.header-cont-tex:hover
+.header-nav-text:hover,.header-cont-tex:hover, .footer-adress2:hover, .footer-adress-mail:hover, .footer-adress-tel:hover
 {
     color: #2196F3;
 }
@@ -301,3 +301,4 @@ ul
     letter-spacing: 0.03em;
     color: #757575;
 }
+

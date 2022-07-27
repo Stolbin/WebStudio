@@ -60,9 +60,13 @@ ul
 {
     background-color: var(--heade-title-color);
 }
-/* .header-logo
-{   
-} */
+.header-logo
+{  
+    width: 1600px;
+    height: 80px;       
+    margin-bottom: 25px;
+    margin-left: 215px; 
+}
 .nav-logo1, .nav-logo2
 {
     font-family: 'Raleway', sans-serif;
@@ -85,24 +89,25 @@ ul
     color: var(--heade-navigation-color);
     cursor: pointer;
 }
-/* .header-position-nav
+.header-position-nav
 {
-    display: flex;
+    /* display: flex; */
+    width: 294px;
+    height: 16px;
     gap: 50px;
-    margin-left: 453px;
-    margin-top: -32px;
-} */
+
+}
 .header-cont-tex
 {
     color: var(--heade-contacts-color);
 }
-/* .header-position-cont
+.header-position-cont
 {   
-    display: flex;
+    /* display: flex; */
+    width: 122px;
+    height: 16px;
     gap: 50px;
-    margin-left: 1078px;
-    margin-top: -32px;
-} */
+}
 .header-link:hover,
 .footer-link:hover,
 .header-link:focus,
@@ -147,10 +152,10 @@ ul
 {
     background-color: var(--main-hero-btn-hover-background-color)
 }
-/* .about
+.about
 {
     display: flex;
-} */
+}
 .main-about-h3
 {
     font-weight: 700;
@@ -178,11 +183,11 @@ ul
     letter-spacing: 0.03em;
     color: var(--main-h2-hero-color)
 }
-/* .projects-imgs
+.projects-imgs
 {
     display: flex;
     gap: 30px;
-} */
+}
 .team
 {
     background-color: var(--main-team-background-color) 
@@ -196,11 +201,11 @@ ul
     /* text-align: center; */
     color: var(--main-h2-hero-color)
 }
-/* .team-ppl
+.team-ppl
 {
     display: flex;
     gap: 30px;
-} */
+}
 .team-ppl-name
 {
     font-weight: 500;
@@ -252,12 +257,11 @@ ul
 {
     color: var(--footer-adress-cont-color)
 }
-
-/* .port-buttons
+.port-buttons
 {
     display: flex;
     gap: 8px;  
-} */
+}
 .port-buts
 {
     font-weight: 500;
@@ -278,25 +282,26 @@ ul
     color: var(--portfolio-main-buttons-color);
     background-color: var(--portfolio-main-buttons-hover-color);
     }
-/* .port-projects-container
+.port-projects-container
 {  
     max-width: 1170px;
     margin-left: 215px;
     margin-top: 34px;
-} */
-/* .port-projects-card-set
+}
+.port-projects-card-set
 {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding: 0;    
-} */
-/* .port-proj-item
+    padding: 0;
+    margin-top: 50px;    
+}
+.port-proj-item
 {
     flex-basis: calc((100% - 60px) / 3);
     width: 370px;
     height: 404px;
-} */
+}
 .prot-h3
 {
     font-weight: 700;

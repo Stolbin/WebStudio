@@ -91,7 +91,6 @@ ul
 }
 .header-position-nav
 {
-    /* display: flex; */
     width: 294px;
     height: 16px;
     gap: 50px;
@@ -103,7 +102,6 @@ ul
 }
 .header-position-cont
 {   
-    /* display: flex; */
     width: 122px;
     height: 16px;
     gap: 50px;
@@ -129,7 +127,6 @@ ul
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-h1-color)
@@ -139,7 +136,6 @@ ul
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* align-items: center; */
     letter-spacing: 0.06em;
     color: var(--main-hero-btn-color);
     background-color: var(--main-hero-btn-background-color);
@@ -179,7 +175,6 @@ ul
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--main-h2-hero-color)
 }
@@ -198,7 +193,6 @@ ul
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    /* text-align: center; */
     color: var(--main-h2-hero-color)
 }
 .team-ppl
@@ -211,7 +205,6 @@ ul
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
-    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--main-h2-hero-color)
 }
@@ -220,7 +213,6 @@ ul
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--main-p-hero-color)
 }
@@ -267,8 +259,6 @@ ul
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
-    /* align-items: center;
-    vertical-align: top; */
     letter-spacing: 0.03em;
     margin-right: 8px;
     background: var(--portfolio-main-buttons-background-color);
@@ -281,6 +271,7 @@ ul
 {
     color: var(--portfolio-main-buttons-color);
     background-color: var(--portfolio-main-buttons-hover-color);
+<<<<<<< HEAD
     }
 .port-projects-container
 {  
@@ -301,6 +292,8 @@ ul
     flex-basis: calc((100% - 60px) / 3);
     width: 370px;
     height: 404px;
+=======
+>>>>>>> mod-2
 }
 .prot-h3
 {

@@ -31,6 +31,10 @@ body
 {
     font-family: 'Roboto', sans-serif;
 }
+*
+{
+    box-sizing: border-box;
+}
 .visually-hidden 
 {
     white-space: nowrap;
@@ -301,7 +305,8 @@ ul
     letter-spacing: 0.06em;
     color: var(--main-portf-h3-hero-color);
 }
-.link-port-proj {
+.link-port-proj 
+{
     color: var(--main-portf-h3-hero-color)
 }
 .port-p
@@ -312,3 +317,4 @@ ul
     letter-spacing: 0.03em;
     color: var(--main-portf-p-hero-color)
 }
+

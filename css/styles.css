@@ -308,10 +308,6 @@ body
     background: var(--footer-background-color);
     padding-top: 60px;
 }
-.footer-logo
-{
-    margin-bottom: 30px;
-}
 .adress-logo1, .adress-logo2
 {
     font-family: 'Raleway', sans-serif;

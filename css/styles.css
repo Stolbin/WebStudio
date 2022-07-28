@@ -27,13 +27,42 @@
     --current-page-color: #2196F3;
     
 }
+* 
+{
+    box-sizing: border-box;
+}
+p, h1, h2, h3, h4, h5, h6
+{
+    margin: 0;
+}
+ul 
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+button
+{
+    cursor: pointer;
+}
+address
+{
+    font-style: normal;
+    margin-top: 10px;
+}
 body
 {
     font-family: 'Roboto', sans-serif;
 }
-*
+.conteiner
 {
-    box-sizing: border-box;
+    width: 1200px;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 215px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .visually-hidden 
 {
@@ -51,21 +80,22 @@ body
 {
     text-decoration: none;
 }
-ul 
-{
-    list-style: none;   
-}
 /* <---------- HEDER ----------> */
 .header
 {
-    background-color: var(--heade-title-color);
+    width: 1600px;
+    height: 80px;
+    background-color: var(--heade-title-background-color);
 }
 .header-logo
-{  
-    width: 1600px;
-    height: 80px;       
-    margin-bottom: 25px;
-    margin-left: 215px; 
+{
+    padding-top: 24px;
+    padding-left: 15px;
+}
+.navigation
+{
+    display: flex;
+
 }
 .nav-logo1, .nav-logo2
 {
@@ -74,7 +104,7 @@ ul
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--header-footer-logo1-color)
+    color: var(--header-footer-logo1-color);
 }
 .nav-logo2 
 {
@@ -87,26 +117,24 @@ ul
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--heade-navigation-color);
-    cursor: pointer;
 }
 .header-position-nav
 {
-    /* display: flex; */
-    width: 294px;
-    height: 16px;
+    display: flex;
     gap: 50px;
-
+    margin-left: 108px;
+    margin-top: 32px;
 }
 .header-cont-tex
 {
     color: var(--heade-contacts-color);
 }
 .header-position-cont
-{   
-    /* display: flex; */
-    width: 122px;
-    height: 16px;
+{
+    display: flex;
     gap: 50px;
+    margin-left: 863px;
+    margin-top: -24px;
 }
 .header-link:hover,
 .footer-link:hover,
@@ -122,39 +150,58 @@ ul
 /* <---------- MAIN ----------> */
 .main-hero 
 {
-    background-color: var(--main-hero-background-color)
+    width: 1600px;
+    height: 600px;
+    padding-top: 215px;
+    background-color: var(--main-hero-background-color);
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-left: 452px;
+
 }
 .main-hero-h1                   
 {
+    max-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--main-h1-color)
+    color: var(--main-h1-color);
 }
 .main-hero-btn 
 {
+    width: 200px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /* align-items: center; */
+    text-align: center;
     letter-spacing: 0.06em;
     color: var(--main-hero-btn-color);
     background-color: var(--main-hero-btn-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
-    cursor: pointer;
+    margin-left: 248px;
+    margin-top: 30px;
+    /* padding: 10px 29px; */
 }
 .main-hero-btn:hover 
 {
     background-color: var(--main-hero-btn-hover-background-color)
 }
+/* ----- About ----- */
 .about
 {
+    max-width: 1170px;
+    margin-left: 215px;
+}
+.about-text
+{
     display: flex;
+    gap: 30px;
 }
 .main-about-h3
 {
@@ -163,7 +210,7 @@ ul
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-h3-hero-color)
+    color: var(--main-h3-hero-color);
 }
 .main-about-p
 {
@@ -171,26 +218,42 @@ ul
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--main-p-hero-color)
+    color: var(--main-p-hero-color);
+    margin-top: 10px;
+}
+.item-about
+{
+    width: 270px;
+}
+.projects
+{
+    width: 1170px;
+    height: 386px;
+    margin-top: 94px;
+    margin-left: 200px;
+    margin-bottom: 94px;
 }
 .projects-h2
 {
-    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-h2-hero-color)
+    color: var(--main-h2-hero-color);
 }
 .projects-imgs
 {
     display: flex;
     gap: 30px;
+    margin-top: 50px;
 }
 .team
 {
-    background-color: var(--main-team-background-color) 
+    width: 1600px;
+    height: 648px;
+    background-color: var(--main-team-background-color);
+    padding-top: 94px;
 }
 .team-h2
 {
@@ -198,95 +261,119 @@ ul
     font-size: 36px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    /* text-align: center; */
-    color: var(--main-h2-hero-color)
+    text-align: center;
+    color: var(--main-h2-hero-color);
 }
 .team-ppl
 {
     display: flex;
     gap: 30px;
 }
-.team-ppl-name
+.team-people
+{
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1635px;
+    background: var(--heade-title-background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    margin-top: 50px;
+}
+.team-ppl-h3
 {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(19/16);
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-h2-hero-color)
+    color: var(--main-h2-hero-color);
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
-.team-ppl-position
+.team-ppl-p
 {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
-    /* text-align: center; */
+    text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-p-hero-color)
 }
 /* <---------- FOOTER ----------> */
 .footer
 {
-    background: var(--footer-background-color)
+    width: 1600px;
+    height: 252px;
+    background: var(--footer-background-color);
+    padding-top: 60px;
+}
+.footer-logo
+{
+    margin-bottom: 30px;
 }
 .adress-logo1, .adress-logo2
 {
     font-family: 'Raleway', sans-serif;
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--header-footer-logo1-color)
+    color: var(--header-footer-logo1-color);
 }
 .adress-logo2 
 {
-    color: var(--footer-logo2-color)
+    color: var(--footer-logo2-color);
 }
 .footer-adress2, .footer-adress-mail, .footer-adress-tel
 {
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--footer-adress-text-color)
+    color: var(--footer-adress-text-color);
 }
 .footer-adress-mail, .footer-adress-tel
 {
-    color: var(--footer-adress-cont-color)
+    color: var(--footer-adress-cont-color);
+}
+footer li
+{
+    margin-top: 10px;
 }
 .port-buttons
 {
     display: flex;
-    gap: 8px;  
+    gap: 8px;
+    margin-left: 280px;
+    margin-top: 94px; 
 }
 .port-buts
 {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
-    /* align-items: center;
-    vertical-align: top; */
+    line-height: 1.62;
+    text-align: center;
     letter-spacing: 0.03em;
-    margin-right: 8px;
     background: var(--portfolio-main-buttons-background-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
-
+    padding: 6px 22px;    
 }
 .port-buts:hover
 {
     color: var(--portfolio-main-buttons-color);
     background-color: var(--portfolio-main-buttons-hover-color);
-    }
-.port-projects-container
-{  
-    max-width: 1170px;
-    margin-left: 215px;
+}
+.port-projects
+{
+    width: 1170px;
+    height: 1454px;
     margin-top: 34px;
+    margin-bottom: 94px;
+    margin-left: 200px;
 }
 .port-projects-card-set
 {
@@ -294,25 +381,29 @@ ul
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
-    margin-top: 50px;    
+    margin-top: 50px;
 }
 .port-proj-item
 {
     flex-basis: calc((100% - 60px) / 3);
     width: 370px;
     height: 404px;
+    background: var(--heade-title-background-color);
+    border: 1px solid #EEEEEE;
 }
-.prot-h3
+.port-h3
 {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-portf-h3-hero-color);
+    margin-left: 24px;
+    margin-top: 20px;
 }
 .link-port-proj 
 {
-    color: var(--main-portf-h3-hero-color)
+    color: var(--main-portf-h3-hero-color);
 }
 .port-p
 {
@@ -320,6 +411,8 @@ ul
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    color: var(--main-portf-p-hero-color)
+    color: var(--main-portf-p-hero-color);
+    margin-left: 24px;
+    margin-top: 4px;
 }
 

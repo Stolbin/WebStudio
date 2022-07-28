@@ -174,6 +174,8 @@ body
 {
     width: 200px;
     height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -347,6 +349,8 @@ footer li
 }
 .port-buts
 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;

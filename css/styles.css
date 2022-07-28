@@ -338,7 +338,7 @@ body
 {
     color: var(--footer-adress-cont-color);
 }
-footer li
+footer li 
 {
     margin-top: 10px;
 }

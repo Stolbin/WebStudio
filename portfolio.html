@@ -8,8 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"/>
+    <link
       rel="stylesheet"
-    />
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
@@ -17,7 +22,7 @@
   <body>
     <header class="header">
       <!-- Top bar -->
-      <div class="conteiner">
+      <div class="conteiner header-conteiner">
         <nav class="navigation">
           <a href="./index.html" class="header-logo link">
             <span class="nav-logo1">Web</span
@@ -27,14 +32,14 @@
             <li class="header-nav-link">
               <a
                 href="./index.html"
-                class="header-nav-text link heder-link current"
+                class="header-nav-text link heder-link"
                 >Студия</a
               >
             </li>
             <li class="header-nav-link">
               <a
                 href="./portfolio.html"
-                class="header-nav-text link header-link"
+                class="header-nav-text link header-link current"
                 >Портфолио</a
               >
             </li>
@@ -61,7 +66,7 @@
     </header>
     <!-- Main content -->
     <main class="main">
-      <section class="port-projects">
+      <section class="port-projects-container">
         <div class="conteiner">
           <h1 class="visually-hidden">projects</h1>
           <!-- Buttons -->
@@ -191,8 +196,7 @@
                 <p class="port-p">Приложение</p></a
               >
             </li>
-          </ul>
-        </div>
+          </ul></div>
       </section>
     </main>
     <footer class="footer">

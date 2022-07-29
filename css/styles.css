@@ -69,8 +69,7 @@ body {
 
 .conteiner {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
     /* outline: 2px solid red; */

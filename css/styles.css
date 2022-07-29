@@ -93,6 +93,7 @@ body {
 
 /* <---------- HEDER ----------> */
 .header {
+    outline: 1px solid #ECECEC;
     background-color: var(--heade-title-background-color);
 }
 

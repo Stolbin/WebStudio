@@ -59,12 +59,11 @@ button {
 
 address {
     font-style: normal;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin: 0px;
 }
 
 .conteiner {
@@ -93,7 +92,7 @@ body {
 
 /* <---------- HEDER ----------> */
 .header {
-    outline: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
     background-color: var(--heade-title-background-color);
 }
 
@@ -274,16 +273,14 @@ body {
 }
 
 .team-people {
-    width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1635px;
     background: var(--heade-title-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-top: 50px;
 }
-
+.team-text
+{
+    padding: 30px 0px;
+}
 .team-ppl-h3 {
     font-weight: 500;
     font-size: 16px;
@@ -291,7 +288,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-h2-hero-color);
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 
@@ -341,15 +337,14 @@ body {
 }
 
 footer li {
-    margin-top: 10px;
+    margin-top: 9px;
+
 }
 
 .port-buttons {
     display: flex;
-    align-items: center;
+    justify-content: center;
     gap: 8px;
-    padding-top: 94px;
-    padding-left: 285px;
 }
 
 .port-buts {
@@ -372,21 +367,28 @@ footer li {
     background-color: var(--portfolio-main-buttons-hover-color);
 }
 
+.port-projects-container
+{
+    padding: 94px 0px;
+}
 .port-projects-card-set {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    padding-bottom: 94px;
     margin-top: 50px;
 }
 
+.port-proj-text
+{
+    padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+}
 .port-proj-item {
     flex-basis: calc((100% - 60px) / 3);
-    width: 370px;
-    height: 404px;
     background: var(--heade-title-background-color);
-    border: 1px solid #EEEEEE;
-}
+    }
 
 .port-h3 {
     font-weight: 700;
@@ -394,8 +396,6 @@ footer li {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-portf-h3-hero-color);
-    padding-left: 24px;
-    padding-top: 20px;
 }
 
 .link-port-proj {
@@ -408,6 +408,5 @@ footer li {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--main-portf-p-hero-color);
-    padding-left: 24px;
-    padding-top: 4px;
+    margin-top: 4px;
 }

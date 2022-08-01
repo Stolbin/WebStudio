@@ -26,7 +26,6 @@
     --main-portf-h3-hero-color: #212121;
     --main-portf-p-hero-color: #757575;
     --current-page-color: #2196F3;
-
 }
 
 * {
@@ -278,8 +277,7 @@ body {
     border-radius: 0px 0px 4px 4px;
     margin-top: 50px;
 }
-.team-text
-{
+.team-text {
     padding: 30px 0px;
 }
 .team-ppl-h3 {
@@ -366,10 +364,10 @@ footer li:nth-child(n + 2) {
     background-color: var(--portfolio-main-buttons-hover-color);
 }
 
-.port-projects-container
-{
+.port-projects-container {
     padding: 94px 0px;
 }
+
 .port-projects-card-set {
     display: flex;
     flex-wrap: wrap;
@@ -384,6 +382,7 @@ footer li:nth-child(n + 2) {
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
 }
+
 .port-proj-item {
     flex-basis: calc((100% - 60px) / 3);
     background: var(--heade-title-background-color);

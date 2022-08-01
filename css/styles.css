@@ -276,6 +276,7 @@ body {
     background: var(--heade-title-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+    margin-top: 50px;
 }
 .team-text
 {
@@ -288,7 +289,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-h2-hero-color);
-    margin-bottom: 10px;
 }
 
 .team-ppl-p {
@@ -297,7 +297,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-p-hero-color)
+    color: var(--main-p-hero-color);
 }
 
 /* <---------- FOOTER ----------> */
@@ -336,9 +336,8 @@ body {
     color: var(--footer-adress-cont-color);
 }
 
-footer li {
+.wrap:nth-child(n + 2) {
     margin-top: 9px;
-
 }
 
 .port-buttons {

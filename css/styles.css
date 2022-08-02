@@ -334,7 +334,7 @@ body {
     color: var(--footer-adress-cont-color);
 }
 
-footer li:nth-child(n + 2) {
+.footer-li:nth-child(n + 2) {
     margin-top: 9px;
 }
 

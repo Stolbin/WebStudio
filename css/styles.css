@@ -176,6 +176,11 @@ body {
     fill: var(--hover-focus-color)
 }
 
+.header-nav-text:hover,
+.header-nav-text:focus {
+    color: var(--hover-focus-color)
+}
+
 .header-link:hover,
 .footer-link:hover,
 .header-link:focus,

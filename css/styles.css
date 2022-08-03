@@ -1,6 +1,4 @@
-:root
-/* ----- Colors ----- */
-    {
+:root {
     --heade-title-background-color: #FFFFFF;
     --main-hero-background-color: #C4C4C4;
     --footer-background-color: #2F303A;
@@ -94,6 +92,7 @@ body {
 }
 
 /* <---------- HEDER ----------> */
+
 .header {
     border-bottom: 1px solid #ECECEC;
     background-color: var(--heade-title-background-color);
@@ -211,16 +210,14 @@ body {
     background-color: var(--main-hero-background-color);
 }
 
-.container_about_img
-{
+.container_about_img {
     background-color: #F5F4FA;
     padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
 }
 
-.item-about::before 
-{
+.item-about::before {
     display: block;
     content: '';
     width: 270px;
@@ -230,7 +227,6 @@ body {
     border-radius: 4px;
     background-size: contain;
     background-position: center;
-
 }
 
 .main-hero-h1 {
@@ -464,7 +460,6 @@ body {
     fill: #2196F3;
 }
 
-
 /* <---------- FOOTER ----------> */
 
 .adress-logo1,
@@ -573,6 +568,7 @@ body {
 }
 
 /* <<<------------ PORTFOLIO ------------>>> */
+
 .port-buttons {
     display: flex;
     justify-content: center;
@@ -610,8 +606,7 @@ body {
     margin-top: 50px;
 }
 
-.port-proj-text
-{
+.port-proj-text {
     padding: 20px 24px;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
@@ -624,7 +619,7 @@ body {
 }
 
 .port-proj-item:hover,
-.port-proj-item:focus   {
+.port-proj-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

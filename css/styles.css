@@ -185,6 +185,7 @@ body {
     color: var(--hover-focus-color)
 }
 
+
 .current {
     color: var(--current-page-color)
 }
@@ -466,7 +467,11 @@ body {
     color: var(--footer-adress-cont-color);
 }
 
+<<<<<<< HEAD
 .footer1-li:nth-child(n + 2) {
+=======
+.footer-li:nth-child(n + 2) {
+>>>>>>> e851b8fc30b9669f656a508f2f4630dc84a29a4c
     margin-top: 9px;
 }
 

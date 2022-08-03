@@ -61,6 +61,7 @@ button {
 }
 
 address {
+    display: flex;
     font-style: normal;
     margin-top: 20px;
 }
@@ -150,7 +151,7 @@ body {
     margin-left: auto; 
 }
 
-.cont-icon-mail {
+.icon-mail {
     display: inline-block;
     margin-right: 10px;
     fill: #757575;
@@ -159,7 +160,7 @@ body {
     cursor: pointer;
 }
 
-.cont-icon-tel {  
+.icon-tel {  
     display: inline-block;
     margin-right: 10px;    
     fill: #757575;    
@@ -168,10 +169,10 @@ body {
     cursor: pointer;
 }
 
-.cont-icon-mail:hover,
-.cont-icon-mail:focus,
-.cont-icon-tel:hover,
-.cont-icon-tel:focus {
+.header-mail:hover .icon-mail,
+.header-mail:focus .icon-mail,
+.header-tel:hover .icon-tel,
+.header-tel:focus .icon-tel {
     fill: var(--hover-focus-color)
 }
 
@@ -182,6 +183,10 @@ body {
     color: var(--hover-focus-color)
 }
 
+.header-cont-tex:hover .icon-mail.icon-tel,
+.header-cont-tex:focus .icon-mail.icon-tel{
+    color: var(--hover-focus-color) 
+}
 
 .current {
     color: var(--current-page-color)
@@ -419,20 +424,49 @@ body {
     fill: #FFFFFF;
 }
 
-.btn_client {
-    max-width: 170px;
-    padding: 16px 32px 16px 32px;
-    align-items: center;
-    border: 1px solid #AFB1B8;    
-    border-radius: 4px;
-    background-color: transparent;
+.clients {
+    padding: 94px 0px;
 }
 
-/* <---------- FOOTER ----------> */
-.footer {
-    background: var(--footer-background-color);
-    padding: 60px 0px;
+.client-box {
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
 }
+
+.logo_client-item {  
+    display: block;  
+    content: '';
+    display: flex;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;    
+    border-radius: 4px;
+    background-color: transparent;    
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logo-client {
+    fill: #AFB1B8;
+    cursor: pointer;
+}
+
+.logo_client-item:hover,
+.logo_client-item:focus {
+    border: 1px solid #2196F3;
+}
+
+.logo_client-item:hover .logo-client,
+.logo_client-item:focus .logo-client {
+    fill: #2196F3;
+}
+
+
+/* <---------- FOOTER ----------> */
 
 .adress-logo1,
 .adress-logo2 {
@@ -481,6 +515,65 @@ body {
     text-transform: uppercase;
     color: #FFFFFF;
 }
+
+.footer {
+    display: flex;    
+    background: var(--footer-background-color);
+    padding: 60px 0px;
+}
+
+.footer-conteiner {
+    display: flex;
+}
+
+.footer-soc-pos {
+    display: block;
+    padding-top: 12px;
+    margin-left: 70px;    
+}
+.h2-footer-soc{   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;    
+}
+
+.footer-soc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #2196F3;
+}
+
+.footer-soc-icon {
+    fill: #FFFFFF;
+}
+
+.footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+    fill: #FFFFFF;
+}
+
+/* <<<------------ PORTFOLIO ------------>>> */
 .port-buttons {
     display: flex;
     justify-content: center;

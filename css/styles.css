@@ -2,7 +2,7 @@
 /* ----- Colors ----- */
     {
     --heade-title-background-color: #FFFFFF;
-    --main-hero-background-color: #2F303A;
+    --main-hero-background-color: #C4C4C4;
     --footer-background-color: #2F303A;
     --header-footer-logo1-color: #2196F3;
     --header-logo2-color: #000000;
@@ -28,7 +28,11 @@
     --current-page-color: #2196F3;
 }
 
-* {
+*,
+::after,
+::before {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -70,7 +74,6 @@ body {
     padding: 0 15px;
     margin-right: auto;
     margin-left: auto;
-    /* outline: 2px solid red; */
 }
 
 .visually-hidden {
@@ -97,11 +100,12 @@ body {
 
 .header-conteiner {
     display: flex;
-    align-items: center;
+    align-items: center;    
+    padding: 32px 0px;
 }
 
 .navigation {
-    display: flex;
+    display: inline-flex;
     align-items: center;
 }
 
@@ -126,12 +130,11 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--heade-navigation-color);
-    padding: 32px 0px;
     display: block;
 }
 
 .header-position-nav {
-    display: flex;
+    display: inline-flex;
     gap: 50px;
     margin-left: 93px;
 }
@@ -141,9 +144,38 @@ body {
 }
 
 .header-position-cont {
-    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
     gap: 50px;
     margin-left: auto; 
+}
+
+.cont-icon-mail {
+    display: inline-block;
+    margin-right: 10px;
+    fill: #757575;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cont-icon-tel {  
+    display: inline-block;
+    margin-right: 10px;    
+    fill: #757575;    
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.cont-icon-mail:hover,
+.cont-icon-mail:focus,
+.cont-icon-tel:hover,
+.cont-icon-tel:focus {
+    fill: var(--hover-focus-color)
 }
 
 .header-link:hover,
@@ -158,10 +190,45 @@ body {
 }
 
 /* <---------- MAIN ----------> */
+
 .main-hero {
+    max-width: 1600px;
+    height: 600px;
     padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+    ), url('../images/bc_hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
     background-color: var(--main-hero-background-color);
+}
+
+.container_about_img
+{
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.item-about::before 
+{
+    display: block;
+    content: '';
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: contain;
+    background-position: center;
+
 }
 
 .main-hero-h1 {
@@ -227,8 +294,29 @@ body {
     margin-top: 10px;
 }
 
-.item-about {
-    width: 270px;
+.item-about::before {
+    display: block;
+    content: " ";
+    height: 120px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-about.antena::before {
+    background-image: url(../images/about_antenna.svg);
+}
+
+.item-about.clock::before {
+    background-image: url(../images/about_clock.svg);
+}
+
+.item-about.diagram::before {
+    background-image: url(../images/about_diagram.svg);
+}
+
+.item-about.astronaut::before {
+    background-image: url(../images/about_astronaut.svg);
 }
 
 .projects-h2 {
@@ -248,7 +336,6 @@ body {
     display: flex;
     gap: 30px;
     margin-top: 50px;
-
 }
 
 .team {
@@ -277,9 +364,11 @@ body {
     border-radius: 0px 0px 4px 4px;
     margin-top: 50px;
 }
+
 .team-text {
     padding: 30px 0px;
 }
+
 .team-ppl-h3 {
     font-weight: 500;
     font-size: 16px;
@@ -295,7 +384,50 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-p-hero-color);
+    color: var(--main-p-hero-color);    
+    margin-bottom: 16px;
+}
+
+.team-soc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.team-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #2196F3;
+    fill: currentColor
+}
+
+.team-soc-icon {
+    fill: #AFB1B8;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+    fill: #FFFFFF;
+}
+
+.btn_client {
+    max-width: 170px;
+    padding: 16px 32px 16px 32px;
+    align-items: center;
+    border: 1px solid #AFB1B8;    
+    border-radius: 4px;
+    background-color: transparent;
 }
 
 /* <---------- FOOTER ----------> */
@@ -334,10 +466,23 @@ body {
     color: var(--footer-adress-cont-color);
 }
 
-footer li:nth-child(n + 2) {
+.footer1-li:nth-child(n + 2) {
     margin-top: 9px;
 }
 
+.footer_inv {
+    margin-top: 72px;
+    margin-left: 516px;
+    
+}
+.footer_inv_h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .port-buttons {
     display: flex;
     justify-content: center;
@@ -353,7 +498,6 @@ footer li:nth-child(n + 2) {
     text-align: center;
     letter-spacing: 0.03em;
     background: var(--portfolio-main-buttons-background-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     border: none;
     padding: 6px 22px;
@@ -362,6 +506,7 @@ footer li:nth-child(n + 2) {
 .port-buts:hover {
     color: var(--portfolio-main-buttons-color);
     background-color: var(--portfolio-main-buttons-hover-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .port-projects-container {
@@ -386,7 +531,12 @@ footer li:nth-child(n + 2) {
 .port-proj-item {
     flex-basis: calc((100% - 60px) / 3);
     background: var(--heade-title-background-color);
-    }
+}
+
+.port-proj-item:hover,
+.port-proj-item:focus   {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .port-h3 {
     font-weight: 700;

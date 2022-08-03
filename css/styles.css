@@ -179,10 +179,7 @@ body {
 .header-link:hover,
 .footer-link:hover,
 .header-link:focus,
-.footer-link:focus {
-    color: var(--hover-focus-color)
-}
-
+.footer-link:focus,
 .header-nav-text:hover,
 .header-nav-text:focus,
 .header-cont-tex:hover .icon-mail.icon-tel,

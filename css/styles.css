@@ -176,11 +176,6 @@ body {
     fill: var(--hover-focus-color)
 }
 
-.header-nav-text:hover,
-.header-nav-text:focus {
-    color: var(--hover-focus-color)
-}
-
 .header-link:hover,
 .footer-link:hover,
 .header-link:focus,
@@ -188,6 +183,8 @@ body {
     color: var(--hover-focus-color)
 }
 
+.header-nav-text:hover,
+.header-nav-text:focus,
 .header-cont-tex:hover .icon-mail.icon-tel,
 .header-cont-tex:focus .icon-mail.icon-tel{
     color: var(--hover-focus-color) 

@@ -145,7 +145,6 @@ body {
 
 .header-position-cont {
     align-items: center;
-    justify-content: center;
     display: inline-flex;
     gap: 50px;
     margin-left: auto; 
@@ -156,7 +155,6 @@ body {
     margin-right: 10px;
     fill: #757575;
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -166,7 +164,6 @@ body {
     margin-right: 10px;    
     fill: #757575;    
     background-size: contain;
-    background-position: center;
     background-repeat: no-repeat;
     cursor: pointer;
 }

@@ -223,6 +223,7 @@ body {
 }
 
 .item-about::before {
+    content: '';
     display: block;
     content: '';
     width: 270px;
@@ -298,6 +299,7 @@ body {
 }
 
 .item-about::before {
+    content: '';
     display: block;
     content: " ";
     height: 120px;
@@ -307,18 +309,22 @@ body {
 }
 
 .item-about.antena::before {
+    content: '';
     background-image: url(../images/about_antenna.svg);
 }
 
 .item-about.clock::before {
+    content: '';
     background-image: url(../images/about_clock.svg);
 }
 
 .item-about.diagram::before {
+    content: '';
     background-image: url(../images/about_diagram.svg);
 }
 
 .item-about.astronaut::before {
+    content: '';
     background-image: url(../images/about_astronaut.svg);
 }
 

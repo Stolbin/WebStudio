@@ -24,6 +24,10 @@
     --main-portf-h3-hero-color: #212121;
     --main-portf-p-hero-color: #757575;
     --current-page-color: #2196F3;
+    --icons-contact-fill: #757575;
+    --items-about-background-color: #F5F4FA;
+    --border-portf-proj-color: #EEEEEE;
+    --fill-logo-icons-color: #AFB1B8;
 }
 
 *,
@@ -155,7 +159,7 @@ body {
 
 .icon-mail {
     margin-right: 10px;
-    fill: #757575;
+    fill: var(--icons-contact-fill);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -163,7 +167,7 @@ body {
 
 .icon-tel {  
     margin-right: 10px;    
-    fill: #757575;    
+    fill: var(--icons-contact-fill);    
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -212,7 +216,7 @@ body {
 }
 
 .container_about_img {
-    background-color: #F5F4FA;
+    background-color: var(--items-about-background-color);
     padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -224,7 +228,7 @@ body {
     width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    background: #F5F4FA;
+    background: var(--items-about-background-color);
     border-radius: 4px;
     background-size: contain;
     background-position: center;
@@ -398,7 +402,7 @@ body {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--heade-title-background-color);
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
@@ -407,17 +411,17 @@ body {
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-    background-color: #2196F3;
+    background-color: var(--main-hero-btn-background-color);
     fill: currentColor
 }
 
 .team-soc-icon {
-    fill: #AFB1B8;
+    fill: var(--fill-logo-icons-color);
 }
 
 .team-soc-link:hover .team-soc-icon,
 .team-soc-link:focus .team-soc-icon {
-    fill: #FFFFFF;
+    fill: var(--heade-title-background-color);
 }
 
 .clients {
@@ -436,7 +440,7 @@ body {
     display: flex;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;    
+    border: 1px solid var(--fill-logo-icons-color);    
     border-radius: 4px;
     background-color: transparent;    
     background-size: contain;
@@ -447,18 +451,18 @@ body {
 }
 
 .logo-client {
-    fill: #AFB1B8;
+    fill: var(--fill-logo-icons-color);
     cursor: pointer;
 }
 
 .logo_client-item:hover,
 .logo_client-item:focus {
-    border: 1px solid #2196F3;
+    border: 1px solid var(--header-footer-logo1-color);
 }
 
 .logo_client-item:hover .logo-client,
 .logo_client-item:focus .logo-client {
-    fill: #2196F3;
+    fill: var(--header-footer-logo1-color);
 }
 
 /* <---------- FOOTER ----------> */
@@ -508,7 +512,7 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--footer-adress-text-color);
 }
 
 .footer {  
@@ -530,7 +534,7 @@ body {
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #FFFFFF;    
+    color: var(--footer-adress-text-color);    
 }
 
 .footer-soc {
@@ -554,16 +558,16 @@ body {
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
-    background-color: #2196F3;
+    background-color: var(--main-hero-btn-background-color);
 }
 
 .footer-soc-icon {
-    fill: #FFFFFF;
+    fill: var(--heade-title-background-color);
 }
 
 .footer-soc-link:hover .footer-soc-icon,
 .footer-soc-link:focus .footer-soc-icon {
-    fill: #FFFFFF;
+    fill: var(--heade-title-background-color);
 }
 
 /* <<<------------ PORTFOLIO ------------>>> */
@@ -607,9 +611,9 @@ body {
 
 .port-proj-text {
     padding: 20px 24px;
-    border-bottom: 1px solid #EEEEEE;
-    border-left: 1px solid #EEEEEE;
-    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid var(--border-portf-proj-color);
+    border-left: 1px solid var(--border-portf-proj-color);
+    border-right: 1px solid var(--border-portf-proj-color);
 }
 
 .port-proj-item {

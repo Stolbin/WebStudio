@@ -159,15 +159,15 @@ body {
 
 .icon-mail {
     margin-right: 10px;
-    fill: var(--icons-contact-fill);
+    fill: currentColor;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 
 .icon-tel {  
-    margin-right: 10px;    
-    fill: var(--icons-contact-fill);    
+    margin-right: 10px;
+    fill: currentColor;
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
@@ -177,7 +177,7 @@ body {
 .header-mail:focus .icon-mail,
 .header-tel:hover .icon-tel,
 .header-tel:focus .icon-tel {
-    fill: var(--hover-focus-color)
+    fill: currentColor;
 }
 
 .header-link:hover,
@@ -188,11 +188,11 @@ body {
 .header-nav-text:focus,
 .header-cont-tex:hover .icon-mail.icon-tel,
 .header-cont-tex:focus .icon-mail.icon-tel{
-    color: var(--hover-focus-color) 
+    color: var(--hover-focus-color);
 }
 
 .current {
-    color: var(--current-page-color)
+    color: var(--current-page-color);
 }
 
 /* <---------- MAIN ----------> */

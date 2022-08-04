@@ -129,8 +129,10 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
+
+.header-nav-text {
     color: var(--heade-navigation-color);
-    display: block;
 }
 
 .header-position-nav {
@@ -140,18 +142,18 @@ body {
 }
 
 .header-cont-tex {
+    display: flex;
+    align-items: center;
     color: var(--heade-contacts-color);
 }
 
 .header-position-cont {
-    align-items: center;
     display: inline-flex;
     gap: 50px;
     margin-left: auto; 
 }
 
 .icon-mail {
-    display: inline-block;
     margin-right: 10px;
     fill: #757575;
     background-size: contain;
@@ -160,7 +162,6 @@ body {
 }
 
 .icon-tel {  
-    display: inline-block;
     margin-right: 10px;    
     fill: #757575;    
     background-size: contain;
@@ -492,7 +493,7 @@ body {
     color: var(--footer-adress-cont-color);
 }
 
-.footer1-li:nth-child(n + 2) {
+.footer-li:nth-child(n + 2) {
     margin-top: 9px;
 }
 
@@ -510,19 +511,17 @@ body {
     color: #FFFFFF;
 }
 
-.footer {
-    display: flex;    
+.footer {  
     background: var(--footer-background-color);
     padding: 60px 0px;
 }
 
 .footer-conteiner {
+    align-items: baseline;
     display: flex;
 }
 
 .footer-soc-pos {
-    display: block;
-    padding-top: 12px;
     margin-left: 70px;    
 }
 .h2-footer-soc{   

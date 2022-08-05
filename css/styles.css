@@ -450,6 +450,7 @@ body {
     border-radius: 4px;
     background-color: transparent;
     background-repeat: no-repeat;
+    background-size: contain;
     align-items: center;
     justify-content: center;
 }

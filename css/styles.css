@@ -445,10 +445,10 @@ body {
     display: flex;
     width: 170px;
     height: 92px;
+    fill: var(--fill-logo-icons-color);
     border: 1px solid var(--fill-logo-icons-color);
     border-radius: 4px;
     background-color: transparent;
-    background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
@@ -460,20 +460,20 @@ body {
     margin-top: 50px;
 }
 
-.logo-client {
-    fill: var(--fill-logo-icons-color);
-    cursor: pointer;
-}
-
 .client-link:hover,
 .client-link:focus {
+    fill: var( --current-page-color:);
     border: 1px solid var(--header-footer-logo1-color);
 }
 
 .logo-client,
 .logo-client {
-    fill: var(--header-footer-logo1-color);
-    border: 1px solid var(--header-footer-logo1-color);
+    fill: var(--fill-logo-icons-color:);
+}
+
+.logo-client:hover,
+.logo-client:focus {
+    fill: var(--current-page-color:);
 }
 
 /* <---------- FOOTER ----------> */

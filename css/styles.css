@@ -470,9 +470,10 @@ body {
     border: 1px solid var(--header-footer-logo1-color);
 }
 
-.client-link:hover .logo-client,
-.client-link:focus .logo-client {
+.logo-client,
+.logo-client {
     fill: var(--header-footer-logo1-color);
+    border: 1px solid var(--header-footer-logo1-color);
 }
 
 /* <---------- FOOTER ----------> */
@@ -635,8 +636,9 @@ body {
     background: var(--heade-title-background-color);
 }
 
-.port-proj-item:hover,
-.port-proj-item:focus {
+.link-port-proj:hover,
+.link-port-proj:focus {
+    display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

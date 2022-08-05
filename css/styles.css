@@ -461,19 +461,15 @@ body {
 }
 
 .client-link:hover,
-.client-link:focus {
-    fill: var( --current-page-color:);
-    border: 1px solid var(--header-footer-logo1-color);
-}
-
-.logo-client,
-.logo-client {
-    fill: var(--fill-logo-icons-color:);
-}
-
+.client-link:focus,
 .logo-client:hover,
 .logo-client:focus {
-    fill: var(--current-page-color:);
+    fill: var(--current-page-color);
+}
+
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid var(--header-footer-logo1-color);
 }
 
 /* <---------- FOOTER ----------> */

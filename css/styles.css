@@ -470,7 +470,7 @@ body {
 
 .client-link:hover,
 .client-link:focus {
-    border: 1px solid var(--header-footer-logo1-color);
+    border-color: var(--current-page-color);
 }
 
 /* <---------- FOOTER ----------> */

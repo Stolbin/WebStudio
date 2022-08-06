@@ -441,16 +441,12 @@ body {
 }
 
 .client-link {
-    content: '';
     display: flex;
     width: 170px;
     height: 92px;
     fill: var(--fill-logo-icons-color);
     border: 1px solid var(--fill-logo-icons-color);
     border-radius: 4px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-size: contain;
     align-items: center;
     justify-content: center;
 }

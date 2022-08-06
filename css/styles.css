@@ -111,6 +111,9 @@ body {
     align-items: center;
 }
 
+.header-logo {
+    padding: 24px 0px 24px 0px;
+}
 .nav-logo1,
 .nav-logo2 {
     font-family: 'Raleway', sans-serif;
@@ -220,9 +223,6 @@ body {
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
-    /* background-repeat: no-repeat; */
-    /* background-size: contain;
-    background-position: center; */
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;    

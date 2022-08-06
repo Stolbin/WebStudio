@@ -214,24 +214,18 @@ body {
     background-color: var(--main-hero-background-color);
 }
 
-.container_about_img {
-    background-color: var(--items-about-background-color);
-    padding: 25px 100px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-}
-
-.item-about::before {
-    content: '';
-    display: block;
-    content: '';
+.about-icon-item {
+    display: flex;
     width: 270px;
     height: 120px;
-    margin-bottom: 30px;
-    background: var(--items-about-background-color);
+    background: #F5F4FA;
     border-radius: 4px;
-    background-size: contain;
-    background-position: center;
+    /* background-repeat: no-repeat; */
+    /* background-size: contain;
+    background-position: center; */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;    
 }
 
 .main-hero-h1 {
@@ -295,35 +289,6 @@ body {
     letter-spacing: 0.03em;
     color: var(--main-p-hero-color);
     margin-top: 10px;
-}
-
-.item-about::before {
-    content: '';
-    display: block;
-    height: 120px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.item-about.antena::before {
-    content: '';
-    background-image: url(../images/about_antenna.svg);
-}
-
-.item-about.clock::before {
-    content: '';
-    background-image: url(../images/about_clock.svg);
-}
-
-.item-about.diagram::before {
-    content: '';
-    background-image: url(../images/about_diagram.svg);
-}
-
-.item-about.astronaut::before {
-    content: '';
-    background-image: url(../images/about_astronaut.svg);
 }
 
 .projects-h2 {

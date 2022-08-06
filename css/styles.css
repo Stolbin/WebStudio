@@ -461,15 +461,16 @@ body {
     margin-top: 50px;
 }
 
-.client-link:hover,
+/* .client-link:hover,
 .client-link:focus,
 .logo-client:hover,
 .logo-client:focus {
     fill: var(--current-page-color);
-}
+} */
 
 .client-link:hover,
 .client-link:focus {
+    fill: var(--current-page-color);
     border-color: var(--current-page-color);
 }
 

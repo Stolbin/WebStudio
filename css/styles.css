@@ -94,6 +94,12 @@ body {
   text-decoration: none;
 }
 
+:hover,
+:focus {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* <---------- HEDER ----------> */
 
 .header {
@@ -641,8 +647,6 @@ body {
 
 .port-proj-item:hover .text-proj {
   opacity: 1;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-port-proj:hover,

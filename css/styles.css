@@ -96,7 +96,7 @@ body {
 
 :hover,
 :focus {
-  transition-duration: 250ms;
+  transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -207,8 +207,8 @@ body {
 .current::after {
   content: "";
   position: absolute;
-  top: calc(100% - 4px);
-  left: 0%;
+  bottom: 0;
+  left: 0;
   width: 100%;
   height: 4px;
   background: #2196f3;
@@ -621,6 +621,7 @@ body {
 .imx-text {
   position: relative;
   display: block;
+  overflow: hidden;
 }
 
 .text-proj {
@@ -638,15 +639,17 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   opacity: 0;
+  transform: translatey(100%);
 }
 
 .port-proj-item {
-  /* flex-basis: calc((100% - 60px) / 3); */
   background: var(--heade-title-background-color);
 }
 
 .port-proj-item:hover .text-proj {
   opacity: 1;
+  transform: translatey(0);
+  transition: 250ms;
 }
 
 .link-port-proj:hover,

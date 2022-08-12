@@ -76,7 +76,7 @@
       <section class="main-hero">
         <div class="conteiner">
           <h1 class="main-hero-h1">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="main-hero-btn link">
+          <button type="button" class="main-hero-btn link" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -394,10 +394,11 @@
               >
             </li>
           </ul>
-          </div>
-          <div class="footer-soc-pos">                      
+        </address>
+        </div>
+        <div class="footer-soc-pos">                      
         <h2 class="h2-footer-soc">присоединяйтесь</h2>
-            <ul class="footer-soc list">
+          <ul class="footer-soc list">
             <li class="footer-soc-item">
               <a 
               href="https://www.instagram.com/" 
@@ -438,11 +439,19 @@
                 <use href="./images/icons.svg#icon-logo_linkedin"></use>
             </svg>
             </a></li>
-            </ul>
-          </div>
+          </ul>
         </div>
-        </address>
+      </div>
     </footer>
-    <script src="./js/modal.js"></script>
-  </body>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-bt" data-modal-close>
+          <svg class="img-close-modal" wight="18px" height="18px">
+            <use href="./images/icons.svg#icon-close-black-18dp"></use>
+          </svg>
+        </button>
+      </div>
+    </div>    
+  <script src="./js/modal.js"></script>
+  </body>  
 </html>

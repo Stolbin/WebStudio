@@ -285,6 +285,7 @@ body {
 }
 
 /* ----- About ----- */
+
 .about {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -664,6 +665,9 @@ body {
   transform: translateY(0%);
 }
 
+.link-port-proj {
+  transition: box-shadow 250ms var(--cubic-hover);
+}
 .link-port-proj:hover,
 .link-port-proj:focus {
   display: block;

@@ -706,6 +706,7 @@ body {
 /* <<<------------ FORM FOOTER ------------>>> */
 
 .subscribe-form {
+  height: 86px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;

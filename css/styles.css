@@ -713,10 +713,6 @@ body {
   margin-left: 93px;
 }
 
-.but-input-footer {
-  margin-left: 12px;
-}
-
 .input-footer {
   width: 358px;
   height: 50px;
@@ -765,26 +761,37 @@ body {
   color: #ffffff;
 }
 
-.but-input-footer {
+.btn-footer {
+  position: relative;
+}
+
+.btn-input-footer {
   width: 200px;
   height: 50px;
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin-left: 12px;
   border: none;
-  padding: 13px 28px 13px 29px;
+  padding: 10px 28px 10px 29px;
 }
 
 .text-btn-form-footer {
+  position: absolute;
+  left: 41px;
+  bottom: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  text-align: center;
+  margin-left: auto;
   color: #ffffff;
 }
 
 .icon-footer-btn {
+  position: absolute;
+  right: 28px;
+  bottom: 13px;
   fill: #ffffff;
 }
 

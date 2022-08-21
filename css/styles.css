@@ -836,6 +836,12 @@ body {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: fill 250ms var(--cubic-hover);
+}
+
+.img-close-modal:hover,
+.img-close-modal:focus {
+  fill: var(--hover-focus-color);
 }
 
 .is-hidden {

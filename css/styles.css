@@ -749,10 +749,12 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: #ffffff;
-  transition: border 250ms var(--cubic-hover);
+  outline: none;
+  transition: border-color 250ms var(--cubic-hover);
 }
 
-.input-footer:focus {
+.input-footer:focus,
+.input-footer:checked {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -760,7 +762,7 @@ body {
   align-items: center;
   letter-spacing: 0.03em;
   color: #ffffff;
-  border: 1px solid var(--cubic-hover);
+  border-color: var(--hover-focus-color);
 }
 
 .btn-input-footer {
@@ -841,14 +843,11 @@ body {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-}
-
-.img-close-modal {
   transition: fill 250ms var(--cubic-hover);
 }
 
-.img-close-modal:hover,
-.img-close-modal:focus {
+.btn-close-modal:hover,
+.btn-close-modal:focus {
   fill: var(--hover-focus-color);
 }
 
@@ -909,12 +908,13 @@ body {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
   padding: 11px 12px 11px 42px;
-  transition: outline-color 250ms var(--cubic-hover);
+  transition: border-color 250ms var(--cubic-hover);
 }
 
 .input-form-modal:focus {
-  outline-color: var(--hover-focus-color);
+  border-color: var(--hover-focus-color);
 }
 
 .input-form-modal:focus + .input-icon-modal {

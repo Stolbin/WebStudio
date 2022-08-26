@@ -1,0 +1,93 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    background-color: var(--heade-title-background-color);
+}
+
+.header-conteiner {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-link {
+    transition: color 250ms var(--cubic-hover);
+        &:hover,
+        &:focus {
+            color: var(--hover-focus-color);
+        }
+}
+
+
+.header-nav-text,
+.header-cont-tex {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding: 32px 0px;
+}
+
+.header-nav-text {
+    color: var(--heade-navigation-color);
+    transition: color 250ms var(--cubic-hover);
+        &:hover,
+        &:focus {
+            color: var(--hover-focus-color);
+        }
+}
+
+.header-position-nav {
+    display: inline-flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
+.header-cont-tex {
+    display: flex;
+    align-items: center;
+    color: var(--heade-contacts-color);
+    transition: color 250ms var(--cubic-hover);
+}
+
+.header-position-cont {
+    display: inline-flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
+.icon-mail {
+    margin-right: 10px;
+    fill: currentColor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: fill 250ms var(--cubic-hover);
+}
+
+.icon-tel {
+    margin-right: 10px;
+    fill: currentColor;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: fill 250ms var(--cubic-hover);
+}
+
+.current {
+    position: relative;
+    color: var(--current-page-color);
+    &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: #2196f3;
+            border-radius: 2px;
+        }
+}

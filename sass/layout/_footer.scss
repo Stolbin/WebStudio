@@ -1,0 +1,107 @@
+.footer {
+    background: var(--footer-background-color);
+    padding: 60px 0px;
+}
+
+.footer-list {
+    margin-top: 20px;
+}
+
+.adress-logo1,
+.adress-logo2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.39;
+    letter-spacing: 0.03em;
+    color: var(--header-footer-logo1-color);
+}
+
+.adress-logo2 {
+    color: var(--footer-logo2-color);
+}
+
+.footer-adress2,
+.footer-adress-mail,
+.footer-adress-tel {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-adress-text-color);
+}
+
+.footer-adress-mail,
+.footer-adress-tel {
+    color: var(--footer-adress-cont-color);
+}
+
+.footer-item:nth-child(n + 2) {
+    margin-top: 9px;
+}
+
+.footer_inv {
+    margin-top: 72px;
+    margin-left: 516px;
+}
+
+.footer_inv_h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-adress-text-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--hover-focus-color);
+}
+
+.footer-conteiner {
+    align-items: baseline;
+    display: flex;
+}
+
+.footer-soc-pos {
+    margin-left: 70px;
+}
+
+.h2-footer-soc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-adress-text-color);
+}
+
+.footer-soc {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.footer-soc-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms var(--cubic-hover);
+    &:hover,
+    &:focus {
+        background-color: var(--hover-focus-color);
+    }
+}
+
+.footer-soc-icon {
+    fill: var(--heade-title-background-color);
+}

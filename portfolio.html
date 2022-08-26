@@ -18,11 +18,12 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
   </head>
 
   <body>
-    <!-- Header -->
+    <!-- HEADER -->
 
     <header class="header">
       <div class="conteiner header-conteiner">
@@ -77,31 +78,53 @@
       </div>
     </header>
 
-    <!-- Main content -->
+    <!-- MAIN CONTENT -->
 
-    <main class="main">
-      <section class="port-projects-container">
+    <!-- Hero -->
+
+    <main>
+      <section class="section">
         <div class="conteiner">
           <h1 class="visually-hidden">projects</h1>
+
           <!-- Buttons -->
-          <ul class="port-buttons">
-            <li><button type="button" class="port-buts">Все</button></li>
-            <li><button type="button" class="port-buts">Веб-сайты</button></li>
-            <li><button type="button" class="port-buts">Приложения</button></li>
-            <li><button type="button" class="port-buts">Дизайн</button></li>
-            <li><button type="button" class="port-buts">Маркетинг</button></li>
+
+          <ul class="portfolio-buttons">
+            <li>
+              <button type="button" class="portfolio-buttons__item">Все</button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Веб-сайты
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Приложения
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Дизайн
+              </button>
+            </li>
+            <li>
+              <button type="button" class="portfolio-buttons__item">
+                Маркетинг
+              </button>
+            </li>
+
             <!-- Projects -->
           </ul>
           <ul class="port-projects-card-set">
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_1.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -110,20 +133,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Технокряк</h3>
-                  <p class="port-p">Веб-сайт</p>
+                  <h3 class="portfolio-prj-titel">Технокряк</h3>
+                  <p class="portfolio-prj-aftertitel">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_2.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -132,20 +154,21 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Постер New Orlean vs Golden Star</h3>
-                  <p class="port-p">Дизайн</p>
+                  <h3 class="portfolio-prj-titel">
+                    Постер New Orlean vs Golden Star
+                  </h3>
+                  <p class="portfolio-prj-aftertitel">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_3.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -154,20 +177,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Ресторан Seafood</h3>
-                  <p class="port-p">Приложение</p>
+                  <h3 class="portfolio-prj-titel">Ресторан Seafood</h3>
+                  <p class="portfolio-prj-aftertitel">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_4.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -176,20 +198,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Проект Prime</h3>
-                  <p class="port-p">Маркетинг</p>
+                  <h3 class="portfolio-prj-titel">Проект Prime</h3>
+                  <p class="portfolio-prj-aftertitel">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_5.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -198,20 +219,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Проект Boxes</h3>
-                  <p class="port-p">Приложение</p>
+                  <h3 class="portfolio-prj-titel">Проект Boxes</h3>
+                  <p class="portfolio-prj-aftertitel">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_6.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -220,20 +240,21 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Inspiration has no Borders</h3>
-                  <p class="port-p">Веб-сайт</p>
+                  <h3 class="portfolio-prj-titel">
+                    Inspiration has no Borders
+                  </h3>
+                  <p class="portfolio-prj-aftertitel">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_7.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -242,20 +263,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Издание Limited Edition</h3>
-                  <p class="port-p">Дизайн</p>
+                  <h3 class="portfolio-prj-titel">Издание Limited Edition</h3>
+                  <p class="portfolio-prj-aftertitel">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_8.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -264,20 +284,19 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Проект LAB</h3>
-                  <p class="port-p">Маркетинг</p>
+                  <h3 class="portfolio-prj-titel">Проект LAB</h3>
+                  <p class="portfolio-prj-aftertitel">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
-                <div class="imx-text">
+                <div class="portfolio-prj">
                   <img
                     src="./images/img_work_9.jpg"
                     width="370"
                     height="294"
                     alt="project1"
-                    class="port-proj"
                   />
                   <p class="text-proj">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -286,8 +305,8 @@
                   </p>
                 </div>
                 <div class="port-proj-text">
-                  <h3 class="port-h3">Growing Business</h3>
-                  <p class="port-p">Приложение</p>
+                  <h3 class="portfolio-prj-titel">Growing Business</h3>
+                  <p class="portfolio-prj-aftertitel">Приложение</p>
                 </div>
               </a>
             </li>
@@ -296,18 +315,18 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
 
     <footer class="footer">
-      <div class="conteiner footer-conteiner">
+      <div class="conteiner footer-conteiner footer-up">
         <address class="footer-address">
           <div class="footer-up">
             <a href="./index.html" class="footer-logo link">
               <span class="adress-logo1">Web</span>
               <span class="adress-logo2">Studio</span>
             </a>
-            <ul>
-              <li class="footer-li">
+            <ul class="footer-list">
+              <li class="footer-item">
                 <a
                   href="https://goo.gl/maps/gzhTVGdu1cHLUku29"
                   target="_blank"
@@ -317,7 +336,7 @@
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li class="footer-li">
+              <li class="footer-item">
                 <a
                   href="mailto:info@devstudio.com"
                   class="footer-adress-mail link footer-link"
@@ -325,7 +344,7 @@
                   info@devstudio.com
                 </a>
               </li>
-              <li class="footer-li">
+              <li class="footer-item">
                 <a
                   href="tel:+380961111111"
                   class="footer-adress-tel link footer-link"
@@ -342,7 +361,7 @@
             <li class="footer-soc-item">
               <a
                 href="https://www.instagram.com/"
-                target="_blank"
+                target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
               >
@@ -354,7 +373,7 @@
             <li class="footer-soc-item">
               <a
                 href="https://twitter.com/"
-                target="_blank"
+                target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
               >
@@ -366,7 +385,7 @@
             <li class="footer-soc-item">
               <a
                 href="https://www.facebook.com/"
-                target="_blank"
+                target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
               >
@@ -378,7 +397,7 @@
             <li class="team-soc-item">
               <a
                 href="https://www.linkedin.com/"
-                target="_blank"
+                target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
               >

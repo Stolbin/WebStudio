@@ -1,0 +1,74 @@
+.port-projects-card-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.portfolio-prj {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.port-proj-text {
+    padding: 20px 24px;
+    border-bottom: 1px solid var(--border-portf-proj-color);
+    border-left: 1px solid var(--border-portf-proj-color);
+    border-right: 1px solid var(--border-portf-proj-color);
+}
+
+
+.portfolio-prj-titel {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-title-color);
+}
+
+.portfolio-prj-aftertitel {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-pretitle-color);
+    margin-top: 4px;
+}
+
+.text-proj {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    overflow: auto;
+    transform: translateY(101%);
+    transition: transform 250ms var(--cubic-hover);
+        .port-proj-item:hover &,
+        .port-proj-item:focus & {
+            transform: translateY(0%);
+        }
+}
+
+.port-proj-item {
+    background: var(--heade-title-background-color);
+}
+
+
+.link-port-proj {   
+    transition: box-shadow 250ms var(--cubic-hover);
+        &:hover,
+        &:focus {
+            display: block;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+                1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+}

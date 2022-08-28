@@ -1,9 +1,15 @@
+// Utis
 @import './utils/variables';
+
+// Base
 @import './base/resets';
+
+// Components
 @import './components/container';
 @import './components/section';
 @import './components/section-title';
 
+// Loyout
 @import './layout/header';
 @import './layout/logo';
 @import './layout/hero';

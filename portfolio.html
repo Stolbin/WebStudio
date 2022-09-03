@@ -53,7 +53,7 @@
           </ul>
         </nav>
         <ul class="header-position-cont">
-          <li>
+          <li class="header-position-cont-mail">
             <a
               href="mailto:info@devstudio.com"
               class="header-cont-tex link header-link header-mail"
@@ -64,7 +64,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="header-position-cont-tel">
             <a
               href="tel:+380961111111"
               class="header-cont-tex link header-link header-tel"
@@ -77,20 +77,114 @@
           </li>
         </ul>
       </div>
+
+      <!-- -- Mobail menu -- -->
+
+      <button type="button" class="btn-menu-open" data-menu-open>
+        <svg class="btn-menu-icon-open" width="24" height="16">
+          <use href="./images/icons.svg#icon-btn-menu-open"></use>
+        </svg>
+      </button>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-menu">
+          <div class="menu-top">
+            <button type="button" class="btn-menu-close" data-menu-close>
+              <svg class="btn-menu-icon-close" width="18" height="18">
+                <use href="./images/icons.svg#icon-btn-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="menu-nav">
+                <li class="menu-nav-item">
+                  <a href="./index.html" class="menu-nav__link link heder-link">
+                    Студия
+                  </a>
+                </li>
+                <li class="menu-nav-item">
+                  <a
+                    href="./portfolio.html"
+                    class="menu-nav__link link current-mob"
+                  >
+                    Портфолио
+                  </a>
+                </li>
+                <li class="menu-nav-item">
+                  <a href="#" class="menu-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="container-down">
+            <ul class="menu-contacts">
+              <li class="menu-con-item">
+                <a href="tel:+380961111111" class="menu-contacts__tel link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu-con-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-contacts__mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-soc">
+              <li class="menu-social-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.twitter.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- MAIN CONTENT -->
 
     <!-- Hero -->
 
-    <main>
+    <!-- <main>
       <section class="section">
         <div class="conteiner">
-          <h1 class="visually-hidden">projects</h1>
+          <h1 class="visually-hidden">projects</h1> -->
 
-          <!-- Buttons -->
+    <!-- Buttons -->
 
-          <ul class="portfolio-buttons">
+    <!-- <ul class="portfolio-buttons">
             <li>
               <button type="button" class="portfolio-buttons__item">Все</button>
             </li>
@@ -113,11 +207,12 @@
               <button type="button" class="portfolio-buttons__item">
                 Маркетинг
               </button>
-            </li>
+            </li>          
+          </ul> -->
 
-            <!-- Projects -->
-          </ul>
-          <ul class="port-projects-card-set">
+    <!-- Projects -->
+
+    <!-- <ul class="port-projects-card-set">
             <li class="port-proj-item">
               <a href="#" class="link-port-proj link">
                 <div class="portfolio-prj">
@@ -314,11 +409,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="conteiner footer-conteiner footer-up">
         <address class="footer-address">
           <div class="footer-up">
@@ -373,7 +468,7 @@
             </li>
             <li class="footer-soc-item">
               <a
-                href="https://twitter.com/"
+                href="https://www.twitter.com/"
                 target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
@@ -408,11 +503,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Footer form -->
+    <!-- Footer form -->
 
-        <form class="subscribe-form" name="form-footer">
+    <!-- <form class="subscribe-form" name="form-footer">
           <div class="input-form-field">
             <label for="user-mail-footer">
               <span class="label-footer">Подпишитесь на рассылку</span>
@@ -435,6 +530,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

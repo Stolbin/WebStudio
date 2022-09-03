@@ -83,23 +83,28 @@
     display: flex;
 }
 
-.checkbox-form-modal {
+.box-icon-input {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: #757575;
+    @include desktop {
+        font-size: 14px;
+    }
 }
-
+.chekbox-text {
+    
+}
 .box-icon-input span {
     width: 16px;
     height: 15px;
     border: 1.8px solid #212121;
     border-radius: 3px;
     margin-right: 8px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: baseline;
     fill: transparent;
     transition: background-color 250ms var(--cubic-hover),
         fill 250ms var(--cubic-hover), border-color 250ms var(--cubic-hover),
@@ -118,12 +123,15 @@
 
 .modal-terms {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: #2196f3;
     margin-left: 4px;
+    @include desktop {
+        font-size: 14px;
+    }
 }
 
 .input-field-checkbox {

@@ -27,35 +27,37 @@
 
     <header class="header">
       <div class="conteiner header-conteiner">
-        <nav class="navigation">
-          <a href="./index.html" class="header-logo link">
-            <span class="nav-logo1">Web</span>
-            <span class="nav-logo2">Studio</span>
-          </a>
-          <ul class="header-position-nav">
-            <li class="header-nav-link">
-              <a
-                href="./index.html"
-                class="header-nav-text link heder-link current"
-              >
-                Студия
-              </a>
-            </li>
-            <li class="header-nav-link">
-              <a
-                href="./portfolio.html"
-                class="header-nav-text link header-link"
-              >
-                Портфолио
-              </a>
-            </li>
-            <li class="header-nav-link">
-              <a href="" class="header-nav-text link header-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <div>
+          <nav class="navigation">
+            <a href="./index.html" class="header-logo link">
+              <span class="nav-logo1">Web</span>
+              <span class="nav-logo2">Studio</span>
+            </a>
+            <ul class="header-position-nav">
+              <li class="header-nav-link">
+                <a
+                  href="./index.html"
+                  class="header-nav-text link heder-link current"
+                >
+                  Студия
+                </a>
+              </li>
+              <li class="header-nav-link">
+                <a
+                  href="./portfolio.html"
+                  class="header-nav-text link header-link"
+                >
+                  Портфолио
+                </a>
+              </li>
+              <li class="header-nav-link">
+                <a href="" class="header-nav-text link header-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <ul class="header-position-cont">
-          <li>
+          <li class="header-position-cont-mail">
             <a
               href="mailto:info@devstudio.com"
               class="header-cont-tex link header-link header-mail"
@@ -66,7 +68,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li>
+          <li class="header-position-cont-tel">
             <a
               href="tel:+380961111111"
               class="header-cont-tex link header-link header-tel"
@@ -78,6 +80,97 @@
             </a>
           </li>
         </ul>
+      </div>
+
+      <!-- -- Mobail menu -- -->
+
+      <button type="button" class="btn-menu-open" data-menu-open>
+        <svg class="btn-menu-icon-open" width="24" height="16">
+          <use href="./images/icons.svg#icon-btn-menu-open"></use>
+        </svg>
+      </button>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container-menu">
+          <div class="menu-top">
+            <button type="button" class="btn-menu-close" data-menu-close>
+              <svg class="btn-menu-icon-close" width="18" height="18">
+                <use href="./images/icons.svg#icon-btn-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="navigation">
+              <ul class="menu-nav">
+                <li class="menu-nav-item">
+                  <a href="./index.html" class="menu-nav__link link heder-link current-mob">
+                    Студия
+                  </a>
+                </li>
+                <li class="menu-nav-item">
+                  <a href="./portfolio.html" class="menu-nav__link link">
+                    Портфолио
+                  </a>
+                </li>
+                <li class="menu-nav-item">
+                  <a href="#" class="menu-nav__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="container-down">
+            <ul class="menu-contacts">
+              <li class="menu-con-item">
+                <a href="tel:+380961111111" class="menu-contacts__tel link">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="menu-con-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-contacts__mail link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <ul class="menu-soc">
+              <li class="menu-social-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.twitter.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.facebook.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="menu-social-item">
+                <a
+                  href="https://www.linkedin.com/"
+                  target="blank"
+                  class="menu-soc__link link"
+                  rel="noopener noreferrer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -97,9 +190,9 @@
         </div>
       </section>
 
-      <!-- About -->
+    <!-- About -->
 
-      <section class="section">
+    <!-- <section class="section">
         <div class="conteiner">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about">
@@ -153,11 +246,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Projects -->
+    <!-- Projects -->
 
-      <section class="section section--other-pt">
+    <!-- <section class="section section--other-pt">
         <div class="conteiner">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="projects">
@@ -190,11 +283,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Team -->
+    <!-- Team -->
 
-      <section class="section section--other-bgc">
+    <!-- <section class="section section--other-bgc">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
@@ -224,7 +317,7 @@
                   </li>
                   <li class="team-soc-item">
                     <a
-                      href="https://twitter.com/"
+                      href="https://www.twitter.com/"
                       class="team-soc-link link"
                       rel="noopener noreferrer nofollow"
                     >
@@ -284,7 +377,7 @@
                   </li>
                   <li class="team-soc-item">
                     <a
-                      href="https://twitter.com/"
+                      href="https://www.twitter.com/"
                       class="team-soc-link link"
                       rel="noopener noreferrer nofollow"
                     >
@@ -344,7 +437,7 @@
                   </li>
                   <li class="team-soc-item">
                     <a
-                      href="https://twitter.com/"
+                      href="https://www.twitter.com/"
                       class="team-soc-link link"
                       rel="noopener noreferrer nofollow"
                     >
@@ -439,11 +532,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Clients -->
+    <!-- Clients -->
 
-      <section class="section">
+    <!-- <section class="section">
         <div class="conteiner">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="client-box">
@@ -492,11 +585,11 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="conteiner footer-conteiner footer-up">
         <address class="footer-address">
           <div class="footer-up">
@@ -551,7 +644,7 @@
             </li>
             <li class="footer-soc-item">
               <a
-                href="https://twitter.com/"
+                href="https://www.twitter.com/"
                 target="blank"
                 class="footer-soc-link link"
                 rel="noopener noreferrer nofollow"
@@ -586,11 +679,11 @@
               </a>
             </li>
           </ul>
-        </div>
+        </div> -->
 
-        <!-- Footer form -->
+    <!--Footer form -->
 
-        <form class="subscribe-form" name="form-footer">
+    <!-- <form class="subscribe-form" name="form-footer">
           <div class="input-form-field">
             <label for="user-mail-footer">
               <span class="label-footer">Подпишитесь на рассылку</span>
@@ -613,7 +706,7 @@
           </div>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
 
@@ -704,8 +797,8 @@
                 <span>
                   <svg class="box-icon-check" width="11" height="8">
                     <use href="./images/icons.svg#icon-check-gal"></use>
-                  </svg> </span
-                >Соглашаюсь с рассылкой и принимаю
+                  </svg>
+                  </span>Соглашаюсь с рассылкой и принимаю
                 <a href="#" class="modal-terms">Условия договора</a>
               </label>
             </div>
@@ -715,5 +808,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -145,21 +145,21 @@ body {
 }
 @media screen and (min-width: 480px) {
   .conteiner {
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    width: 768px;
+    min-width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    width: 1200px;
+    min-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -204,6 +204,7 @@ body {
   right: 23px;
   border: none;
   background-color: transparent;
+  margin-left: auto;
 }
 
 .btn-menu-icon-open {
@@ -273,6 +274,7 @@ body {
     font-size: 12px;
     line-height: 1.166;
     letter-spacing: 0.02em;
+    margin-left: auto;
     color: var(--heade-contacts-color);
     transition: color 250ms var(--cubic-hover);
   }
@@ -478,7 +480,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero-box {
-    width: 768px;
+    width: 1190px;
     height: 400px;
     padding: 204px 0;
     background-image: var(--bg-hero-gradient), url("/images/tab-bc-hero-1x-min.jpg");

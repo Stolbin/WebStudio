@@ -1,5 +1,6 @@
 // Utis
 @import './utils/variables';
+@import './utils/mixins';
 
 // Base
 @import './base/resets';
@@ -11,6 +12,7 @@
 
 // Loyout
 @import './layout/header';
+@import './layout/mob-menu';
 @import './layout/logo';
 @import './layout/hero';
 @import './layout/about';

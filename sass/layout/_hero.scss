@@ -1,24 +1,23 @@
 .hero-box {
     display: block;
-    width: 320px;
-    height: 400px;
+    min-width: 480px;
     padding: 118px 0px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-image: var(--bg-hero-gradient),
         url("/images/mob-bc-hero-1x-min.jpg");
         @include retina {
             background-image: var(--bg-hero-gradient), 
             url("/images/mob-bc-hero-2x-min.jpg");
         }
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+
     @include table {
-        width: 768px;
+        min-width: 768px;
         height: 400px;
-        padding: 204px 0;
         background-image: var(--bg-hero-gradient),
                 url("/images/tab-bc-hero-1x-min.jpg");
         

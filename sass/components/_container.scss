@@ -1,6 +1,8 @@
 .conteiner {
     width: 320px;
     padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
     @include mobile {
         min-width: 480px;
         margin-left: auto;

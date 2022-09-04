@@ -1,8 +1,15 @@
+@media (max-width: 1199px) {
+  .section--other-pt {
+    display: none;
+  }
+}
+
 .section--other-pt {
   padding-top: 0px;
 }
+
 .projects {
-  display: none;
+  display: flex;
   gap: 30px;
   .project-item {
     position: relative;
@@ -23,11 +30,5 @@
       text-transform: uppercase;
       color: #ffffff;
     }
-  }
-}
-
-@include desktop {
-  .projects {
-    display: flex;
   }
 }

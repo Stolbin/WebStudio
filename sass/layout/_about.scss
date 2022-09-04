@@ -36,23 +36,19 @@
   }
 }
 
-@include mobile {
-  .about__icon {
-    width: 450px;
-  }
-}
 @include table {
   .about {
     display: flex;
     gap: 30px;
-    flex-basis: calc((100%-30px) / 2);
+    flex-wrap: wrap;
+  }
+  .about-item {
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 @include desktop {
-  .about {
-    display: flex;
-    gap: 30px;
-    flex-basis: calc((100%-30px) / 4);
+  .about-item {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }

@@ -1,11 +1,11 @@
 .hero-box {
   display: block;
-  max-width: 767px;
   height: 400px;
   padding: 118px 0px;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   background-size: 100%;
   background-image: var(--bg-hero-gradient),
     url("../images/mob-bc-hero-1x-min.jpg");
@@ -15,11 +15,14 @@
   }
   background-color: var(--main-hero-background-color);
   &__titel {
+    width: 360px;
     font-weight: 900;
     font-size: 20px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
     color: var(--main-h1-color);
   }
@@ -30,6 +33,8 @@
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 0.06em;
     color: var(--main-hero-btn-color);
     background-color: var(--main-hero-btn-background-color);
@@ -45,9 +50,13 @@
   }
 }
 
+@media (max-width: 479px) {
+  .hero-box {
+    background-size: cover;
+  }
+}
 @include table {
   .hero-box {
-    max-width: 1199px;
     height: 400px;
     background-image: var(--bg-hero-gradient),
       url("../images/tab-bc-hero-1x-min.jpg");
@@ -55,7 +64,6 @@
       background-image: var(--bg-hero-gradient),
         url("../images/tab-bc-hero-2x-min.jpg");
       &__titel {
-        font-weight: 900;
         font-size: 26px;
       }
     }
@@ -67,12 +75,16 @@
     max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: var(--bg-hero-gradient),
       url("../images/des-bc-hero-1x.jpg");
     @include retina {
       background-image: var(--bg-hero-gradient),
         url("../images/des-bc-hero-2x.jpg");
       &__titel {
+        width: 696px;
         font-size: 44px;
         line-height: 1.36;
       }

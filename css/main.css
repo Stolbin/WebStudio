@@ -468,12 +468,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: var(--bg-hero-gradient), url("/images/mob-bc-hero-1x-min.jpg");
+  background-image: var(--bg-hero-gradient), url("../images/mob-bc-hero-1x-min.jpg");
   background-color: var(--main-hero-background-color);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-box {
-    background-image: var(--bg-hero-gradient), url("/images/mob-bc-hero-2x-min.jpg");
+    background-image: var(--bg-hero-gradient), url("../images/mob-bc-hero-2x-min.jpg");
   }
 }
 @media screen and (min-width: 480px) {
@@ -488,12 +488,12 @@ body {
     width: 100%;
     height: 400px;
     padding: 200px 0;
-    background-image: var(--bg-hero-gradient), url("/images/tab-bc-hero-1x-min.jpg");
+    background-image: var(--bg-hero-gradient), url("../images/tab-bc-hero-1x-min.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-box {
-    background-image: var(--bg-hero-gradient), url("/images/tab-bc-hero-2x-min.jpg");
+    background-image: var(--bg-hero-gradient), url("../images/tab-bc-hero-2x-min.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -501,12 +501,12 @@ body {
     width: 1600px;
     height: 600px;
     padding: 200px 0px;
-    background-image: var(--bg-hero-gradient), url("/images/des-bc-hero-1x.jpg");
+    background-image: var(--bg-hero-gradient), url("../images/des-bc-hero-1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero-box {
-    background-image: var(--bg-hero-gradient), url("/images/des-bc-hero-2x.jpg");
+    background-image: var(--bg-hero-gradient), url("../images/des-bc-hero-2x.jpg");
   }
 }
 .hero-box__titel {

@@ -7,6 +7,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
   background-image: var(--bg-hero-gradient),
     url("../images/mob-bc-hero-1x-min.jpg");
   @include retina {

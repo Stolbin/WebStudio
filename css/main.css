@@ -487,7 +487,6 @@ body {
   .hero-box {
     width: 100%;
     height: 400px;
-    padding: 200px 0px;
     background-image: var(--bg-hero-gradient), url("../images/tab-bc-hero-1x-min.jpg");
   }
 }
@@ -510,9 +509,9 @@ body {
   }
 }
 .hero-box__titel {
-  max-width: 360px;
+  width: 285px;
   font-weight: 900;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -521,16 +520,19 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (min-width: 480px) {
+  .hero-box__titel {
+    min-width: 360px;
+    font-weight: 900;
+    font-size: 26px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero-box__titel {
     min-width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--main-h1-color);
   }
 }
 .hero-box_btn {

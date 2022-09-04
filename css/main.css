@@ -147,21 +147,21 @@ body {
 }
 @media screen and (min-width: 480px) {
   .conteiner {
-    min-width: 480px;
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .conteiner {
-    min-width: 768px;
+    width: 768px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
   .conteiner {
-    min-width: 1200px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -486,14 +486,14 @@ body {
 }
 @media screen and (min-width: 480px) {
   .hero-box {
-    width: 100%;
+    max-width: 767px;
     height: 400px;
     padding: 118px 0px;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-box {
-    width: 100%;
+    width: 1199px;
     height: 400px;
     background-image: var(--bg-hero-gradient), url("../images/tab-bc-hero-1x-min.jpg");
   }
@@ -505,7 +505,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero-box {
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding: 200px 0px;
     background-image: var(--bg-hero-gradient), url("../images/des-bc-hero-1x.jpg");
@@ -598,7 +598,7 @@ body {
   .about__title {
     text-align: center;
   }
-  .about li:not(:last-child) {
+  .about-item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -615,7 +615,6 @@ body {
   }
   .about__icon {
     width: 354px;
-    text-align: right;
   }
   .about__pretitle {
     width: 354px;

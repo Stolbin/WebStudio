@@ -30,8 +30,8 @@
         <div>
           <nav class="navigation">
             <a href="./index.html" class="header-logo link">
-              <span class="nav-logo1">Web</span>
-              <span class="nav-logo2">Studio</span>
+              <span class="logo1">Web</span>
+              <span class="logo2">Studio</span>
             </a>
             <ul class="header-position-nav">
               <li class="header-nav-link">
@@ -100,7 +100,10 @@
             <nav class="navigation">
               <ul class="menu-nav">
                 <li class="menu-nav-item">
-                  <a href="./index.html" class="menu-nav__link link heder-link current-mob">
+                  <a
+                    href="./index.html"
+                    class="menu-nav__link link heder-link current-mob"
+                  >
                     Студия
                   </a>
                 </li>
@@ -190,14 +193,14 @@
         </div>
       </section>
 
-    <!-- About -->
+      <!-- About -->
 
-    <section class="section">
+      <section class="section">
         <div class="conteiner">
           <h2 class="visually-hidden">About us</h2>
           <ul class="about">
             <li class="about-item">
-                <div class="about__icon">
+              <div class="about__icon">
                 <svg class="about-icons" width="70" height="70">
                   <use href="./images/icons.svg#icon-about_antenna"></use>
                 </svg>
@@ -248,7 +251,7 @@
         </div>
       </section>
 
-    <!-- Projects -->
+      <!-- Projects -->
 
       <section class="section section--other-pt section-projeckt">
         <div class="conteiner">
@@ -256,7 +259,11 @@
           <ul class="projects">
             <li class="project-item">
               <img
-                src="./images/box1.jpg"
+                srcset="
+                  ./images/box1-1x-min.jpg 1x,
+                  ./images/box1-2x-min.jpg 2x
+                "
+                src="./images/box1-1x-min.jpg"
                 width="370"
                 height="294"
                 alt="projeckt1"
@@ -265,7 +272,11 @@
             </li>
             <li class="project-item">
               <img
-                src="./images/box2.jpg"
+                srcset="
+                  ./images/box2-1x-min.jpg 1x,
+                  ./images/box2-2x-min.jpg 2x
+                "
+                src="./images/box2-1x-min.jpg"
                 width="370"
                 height="294"
                 alt="projeckt2"
@@ -274,7 +285,11 @@
             </li>
             <li class="project-item">
               <img
-                src="./images/box3.jpg"
+                srcset="
+                  ./images/box3-1x-min.jpg 1x,
+                  ./images/box3-2x-min.jpg 2x
+                "
+                src="./images/box3-1x-min.jpg"
                 width="370"
                 height="294"
                 alt="projeckt3"
@@ -285,19 +300,42 @@
         </div>
       </section>
 
-    <!-- Team -->
+      <!-- Team -->
 
-    <section class="section section--other-bgc">
+      <section class="section section--other-bgc">
         <div class="conteiner">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team">
             <li class="team__photo">
-              <img
-                src="./images/img_igor_dem_photo.jpg"
-                width="270"
-                height="260"
-                alt="Product Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-igordem-1x-min.jpg 1x,
+                    ./images/mob-igordem-2x-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-igordem-1x-min.jpg 1x,
+                    ./images/tab-igordem-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-igordem-1x-min.jpg 1x,
+                    ./images/des-igordem-2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/des-igordem-1x-min.jpg"
+                  alt="Product Designer"
+                  class="team-photo-size"
+                />
+              </picture>
+
               <div class="team-box">
                 <h3 class="team-box__name">Игорь Демьяненко</h3>
                 <p class="team-box__job-title">Product Designer</p>
@@ -352,12 +390,34 @@
               </div>
             </li>
             <li class="team__photo">
-              <img
-                src="./images/img_olga_rep_fron_dev.jpg"
-                width="270"
-                height="260"
-                alt="Frontend Developer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-olgarep-1x-min.jpg 1x,
+                    ./images/mob-olgarep-2x-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-olgarep-1x-min.jpg 1x,
+                    ./images/tab-olgarep-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-olgarep-1x-min.jpg 1x,
+                    ./images/des-olgarep-2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/des-olgarep-1x-min.jpg"
+                  class="team-photo-size"
+                  alt="Frontend Developer"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__name">Ольга Репина</h3>
                 <p class="team-box__job-title">Frontend Developer</p>
@@ -412,12 +472,34 @@
               </div>
             </li>
             <li class="team__photo">
-              <img
-                src="./images/img_nik_tar_mark.jpg"
-                width="270"
-                height="260"
-                alt="Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-niktar-1x-min.jpg 1x,
+                    ./images/mob-niktar-2x-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-niktar-1x-min.jpg 1x,
+                    ./images/tab-niktar-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-niktar-1x-min.jpg 1x,
+                    ./images/des-niktar-2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/des-niktar-1x-min.jpg"
+                  class="team-photo-size"
+                  alt="Marketing"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__name">Николай Тарасов</h3>
                 <p class="team-box__job-title">Marketing</p>
@@ -472,11 +554,34 @@
               </div>
             </li>
             <li class="team__photo">
-              <img
-                src="./images/img_mih_erm_ui.jpg"
-                width="270"
-                alt="UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mob-miherm-1x-min.jpg 1x,
+                    ./images/mob-miherm-2x-min.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <source
+                  srcset="
+                    ./images/tab-miherm-1x-min.jpg 1x,
+                    ./images/tab-miherm-2x-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/des-miherm-1x-min.jpg 1x,
+                    ./images/des-miherm-2x-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  src="./images/des-miherm-1x-min.jpg"
+                  class="team-photo-size"
+                  alt="UI Designer"
+                />
+              </picture>
               <div class="team-box">
                 <h3 class="team-box__name">Михаил Ермаков</h3>
                 <p class="team-box__job-title">UI Designer</p>
@@ -534,9 +639,9 @@
         </div>
       </section>
 
-    <!-- Clients -->
+      <!-- Clients -->
 
-    <!-- <section class="section">
+      <section class="section clients">
         <div class="conteiner">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="client-box">
@@ -585,17 +690,17 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- FOOTER -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="conteiner footer-conteiner footer-up">
         <address class="footer-address">
           <div class="footer-up">
             <a href="./index.html" class="footer-logo link">
-              <span class="adress-logo1">Web</span>
-              <span class="adress-logo2">Studio</span>
+              <span class="logo1">Web</span>
+              <span class="logo2">Studio</span>
             </a>
             <ul class="footer-list">
               <li class="footer-item">
@@ -679,11 +784,11 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!--Footer form -->
+        <!--Footer form -->
 
-    <!-- <form class="subscribe-form" name="form-footer">
+        <form class="subscribe-form" name="form-footer">
           <div class="input-form-field">
             <label for="user-mail-footer">
               <span class="label-footer">Подпишитесь на рассылку</span>
@@ -706,7 +811,7 @@
           </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Modal -->
 
@@ -797,8 +902,8 @@
                 <span>
                   <svg class="box-icon-check" width="11" height="8">
                     <use href="./images/icons.svg#icon-check-gal"></use>
-                  </svg>
-                  </span>Соглашаюсь с рассылкой и принимаю
+                  </svg> </span
+                >Соглашаюсь с рассылкой и принимаю
                 <a href="#" class="modal-terms">Условия договора</a>
               </label>
             </div>

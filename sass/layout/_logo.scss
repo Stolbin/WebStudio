@@ -8,20 +8,24 @@
   }
 }
 
-.nav-logo1,
-.nav-logo2 {
+.logo1,
+.logo2 {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.166;
+  line-height: calc(28 / 24);
   letter-spacing: 0.03em;
   color: var(--header-footer-logo1-color);
   @include desktop {
     font-size: 26px;
-    line-height: 1.192;
+    line-height: calc(31 / 26);
   }
 }
 
-.nav-logo2 {
+nav .logo2 {
   color: var(--header-logo2-color);
+}
+
+address .logo2 {
+  color: var(--footer-logo2-color);
 }

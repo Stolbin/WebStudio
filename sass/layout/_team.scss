@@ -3,7 +3,10 @@
 }
 
 .team {
+  display: block;
+  width: 100%;
   &__photo {
+    display: block;
     background: var(--heade-title-background-color);
     background-size: cover;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -12,10 +15,7 @@
   }
 }
 
-@media (max-width: 787px) {
-  .team__photo {
-    display: block;
-  }
+@media (max-width: 767px) {
   .team__photo:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -34,7 +34,7 @@
   &__job-title {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.19;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-pretitle-color);
@@ -80,6 +80,29 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
     align-items: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .team-photo-size {
+    width: 100%;
+    max-width: 460px;
+    max-height: 450px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .team-photo-size {
+    width: 354px;
+    height: 374px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-photo-size {
+    width: 270px;
+    height: 260px;
   }
 }

@@ -1,11 +1,12 @@
 .portfolio-buttons {
   display: flex;
   justify-content: left;
-  gap: 8px;
+  gap: 15px 8px;
   flex-wrap: wrap;
   @include table {
     justify-content: center;
     flex-wrap: nowrap;
+    gap: 8px;
   }
   &__item {
     font-family: "Roboto", sans-serif;

@@ -1,99 +1,98 @@
 .mob-menu {
-    position: fixed;
-    background-color: #ffffff;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    >.container-menu {
-        padding: 48px 40px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  > .container-menu {
+    padding: 48px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .btn-menu-close {
-    position: absolute;
-    display: block;
-    width: 18px;
-    height: 18px;
-    top: 21px;
-    right: 25.5px;
-    border: none;
-    background-color: transparent;
-    margin-bottom: 9px;
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  top: 21px;
+  right: 25.5px;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 9px;
 }
 
 .btn-menu-icon-close {
-    fill: #000000;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: fill 250ms var(--cubic-hover);
-    &:hover, 
-    &:focus {
-        fill: var(--hover-focus-color);
-    } 
+  fill: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: fill 250ms var(--cubic-hover);
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus-color);
+  }
 }
 
 .menu-nav {
-    display: block;
-    &-item:not(:last-child) {
-            margin-bottom: 32px;
-        }
-    &__link {        
-        font-weight: 500;
-        font-size: 40px;
-        line-height: 1.18;
-        text-align: center;
-        letter-spacing: 0.02em;
-        color: #212121;
-    }
+  display: block;
+  &-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #212121;
+  }
 }
 
 .current-mob {
-    color: var(--current-page-color);
+  color: var(--current-page-color);
 }
 
 .menu-contacts {
-    display: block;
-    margin-bottom: 64px;
-        &__tel {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
-        color: #2196F3;
-        }
-        &__mail {
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 1.17;
-        letter-spacing: 0.02em;
-        color: #757575; 
-        }
+  display: block;
+  margin-bottom: 64px;
+  &__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
+  &__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
 }
 
 .menu-con-item:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
-
 .menu-soc {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 48px;
-    &-item:not(:last-child) {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
-    &__link {
-        padding-right: 10px;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 1.22;
-        letter-spacing: 0.02em;
-        color: #2196F3;
-    }
+  display: flex;
+  gap: 10px;
+  margin-bottom: 48px;
+  &-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+  &__link {
+    padding-right: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: #2196f3;
+  }
 }

@@ -3,8 +3,7 @@
 }
 
 .team {
-  display: block;
-  width: 100%;
+  display: flex;
   &__photo {
     display: block;
     background: var(--heade-title-background-color);
@@ -16,6 +15,13 @@
 }
 
 @media (max-width: 767px) {
+  .team {
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 450px;
+    justify-content: center;
+    align-items: center;
+  }
   .team__photo:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -77,7 +83,6 @@
 
 @include table {
   .team {
-    display: flex;
     gap: 30px;
     flex-wrap: wrap;
     flex-basis: calc((100% - 30px) / 2);

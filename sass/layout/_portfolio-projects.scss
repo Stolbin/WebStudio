@@ -11,7 +11,8 @@
   }
 }
 
-.project-item {
+.port-proj-item {
+  background: var(--heade-title-background-color);
   @include table {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -71,10 +72,6 @@
   .port-proj-item:focus & {
     transform: translateY(0%);
   }
-}
-
-.port-proj-item {
-  background: var(--heade-title-background-color);
 }
 
 .link-port-proj {

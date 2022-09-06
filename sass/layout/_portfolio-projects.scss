@@ -1,16 +1,22 @@
 .port-projects-card-set {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 40px;
   @include table {
-    flex-basis: calc((100% - 60%) / 2);
+    margin-top: 30px;
   }
   @include desktop {
-    flex-basis: calc((100% - 90%) / 3);
+    margin-top: 50px;
+  }
+}
+
+.project-item {
+  @include table {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -20,6 +26,7 @@
   overflow: hidden;
 }
 .port-proj-text {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-portf-proj-color);
   border-left: 1px solid var(--border-portf-proj-color);
@@ -71,6 +78,9 @@
 }
 
 .link-port-proj {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--cubic-hover);
   &:hover,
   &:focus {

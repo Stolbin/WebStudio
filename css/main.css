@@ -650,6 +650,7 @@ address .logo2 {
 }
 
 .section--other-bgc {
+  max-width: 100%;
   background-color: var(--main-team-background-color);
 }
 
@@ -940,20 +941,28 @@ address .logo2 {
 .port-projects-card-set {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 30px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 @media screen and (min-width: 768px) {
   .port-projects-card-set {
-    flex-basis: 20%;
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
   .port-projects-card-set {
-    flex-basis: 3.3333333333%;
+    margin-top: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .project-item {
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
@@ -964,6 +973,7 @@ address .logo2 {
 }
 
 .port-proj-text {
+  flex-grow: 1;
   padding: 20px 24px;
   border-bottom: 1px solid var(--border-portf-proj-color);
   border-left: 1px solid var(--border-portf-proj-color);
@@ -1014,6 +1024,9 @@ address .logo2 {
 }
 
 .link-port-proj {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--cubic-hover);
 }
 .link-port-proj:hover, .link-port-proj:focus {

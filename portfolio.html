@@ -26,32 +26,42 @@
   <body>
     <!-- HEADER -->
 
-    <header class="header">
+ <header class="header">
       <div class="conteiner header-conteiner">
-        <nav class="navigation">
-          <a href="./index.html" class="header-logo link">
-            <span class="logo1">Web</span>
-            <span class="logo2">Studio</span>
-          </a>
-          <ul class="header-position-nav">
-            <li class="header-nav-link">
-              <a href="./index.html" class="header-nav-text link heder-link">
-                Студия
-              </a>
-            </li>
-            <li class="header-nav-link">
-              <a
-                href="./portfolio.html"
-                class="header-nav-text link header-link current"
-              >
-                Портфолио
-              </a>
-            </li>
-            <li class="header-nav-link">
-              <a href="" class="header-nav-text link header-link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+        <button type="button" class="btn-menu-open" data-menu-open>
+          <svg class="btn-menu-icon-open" width="24" height="16">
+            <use href="./images/icons.svg#icon-btn-menu-open"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="navigation">
+            <a href="./index.html" class="header-logo link">
+              <span class="logo1">Web</span>
+              <span class="logo2">Studio</span>
+            </a>
+            <ul class="header-position-nav">
+              <li class="header-nav-link">
+                <a
+                  href="./index.html"
+                  class="header-nav-text link heder-link"
+                >
+                  Студия
+                </a>
+              </li>
+              <li class="header-nav-link">
+                <a
+                  href="./portfolio.html"
+                  class="header-nav-text link header-link current"
+                >
+                  Портфолио
+                </a>
+              </li>
+              <li class="header-nav-link">
+                <a href="" class="header-nav-text link header-link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <ul class="header-position-cont">
           <li class="header-position-cont-mail">
             <a
@@ -80,10 +90,6 @@
 
       <!-- -- Mobail menu -- -->
 
-      <button type="button" class="btn-menu-open" data-menu-open>
-        <svg class="btn-menu-icon-open" width="24" height="16">
-          <use href="./images/icons.svg#icon-btn-menu-open"></use>
-        </svg>
       </button>
       <div class="mob-menu is-hidden" data-menu>
         <div class="container-menu">

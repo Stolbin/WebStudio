@@ -211,7 +211,7 @@ body {
   width: 24px;
   height: 16px;
   top: 22px;
-  right: 23px;
+  left: 445px;
   border: none;
   background-color: transparent;
 }
@@ -226,12 +226,14 @@ body {
   fill: var(--hover-focus-color);
 }
 
-.header-position-nav, .header-position-cont {
+.header-position-nav,
+.header-position-cont {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .btn-menu-open, .mob-menu {
+  .btn-menu-open,
+.mob-menu {
     display: none;
   }
   .header {
@@ -847,12 +849,25 @@ address .logo2 {
   color: var(--hover-focus-color);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .footer-up {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-up-box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-up-box {
+    justify-content: center;
+    gap: 165px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -874,6 +889,13 @@ address .logo2 {
   text-transform: uppercase;
   color: var(--footer-adress-text-color);
   margin-top: 60px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .h2-footer-soc {
+    margin-top: 0px;
+    text-align: left;
+  }
 }
 
 .footer-soc {
@@ -1066,6 +1088,11 @@ address .logo2 {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .label-footer {
+    text-align: left;
+  }
 }
 
 .input-footer::placeholder {

@@ -51,7 +51,7 @@
   color: var(--hover-focus-color);
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 767px) {
   .footer-up {
     display: block;
     margin-left: auto;
@@ -60,6 +60,20 @@
   }
 }
 
+@include table {
+  .footer-up-box {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media (max-width: 1199px) {
+  .footer-up-box {
+    justify-content: center;
+    gap: 165px;
+    margin-bottom: 60px;
+  }
+}
 @include desktop {
   .footer-conteiner {
     align-items: baseline;
@@ -81,6 +95,12 @@
   text-transform: uppercase;
   color: var(--footer-adress-text-color);
   margin-top: 60px;
+  text-align: center;
+  @include desktop {
+    margin-top: 0px;
+
+    text-align: left;
+  }
 }
 
 .footer-soc {

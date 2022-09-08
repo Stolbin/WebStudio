@@ -25,6 +25,9 @@
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .input-footer::placeholder {

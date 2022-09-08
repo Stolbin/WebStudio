@@ -496,7 +496,7 @@ address .logo2 {
   }
 }
 .hero-box__titel {
-  width: 360px;
+  width: 260px;
   font-weight: 900;
   font-size: 18px;
   line-height: 1.62;
@@ -506,6 +506,11 @@ address .logo2 {
   margin-right: auto;
   text-transform: uppercase;
   color: var(--main-h1-color);
+}
+@media screen and (min-width: 480px) {
+  .hero-box__titel {
+    width: 360px;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-box__titel {

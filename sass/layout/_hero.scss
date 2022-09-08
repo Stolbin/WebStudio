@@ -17,7 +17,7 @@
   }
   background-color: var(--main-hero-background-color);
   &__titel {
-    width: 360px;
+    width: 260px;
     font-weight: 900;
     font-size: 18px;
     line-height: 1.62;
@@ -27,6 +27,9 @@
     margin-right: auto;
     text-transform: uppercase;
     color: var(--main-h1-color);
+    @include mobile {
+      width: 360px;
+    }
     @include table {
       font-size: 26px;
     }

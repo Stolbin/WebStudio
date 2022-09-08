@@ -109,6 +109,8 @@ ul {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -197,6 +199,7 @@ body {
 }
 
 .header-conteiner {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -211,7 +214,7 @@ body {
   width: 24px;
   height: 16px;
   top: 22px;
-  left: 445px;
+  right: 23px;
   border: none;
   background-color: transparent;
 }
@@ -347,7 +350,7 @@ body {
 }
 .mob-menu > .container-menu {
   padding: 48px 40px;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -495,7 +498,7 @@ address .logo2 {
 .hero-box__titel {
   width: 360px;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -503,6 +506,17 @@ address .logo2 {
   margin-right: auto;
   text-transform: uppercase;
   color: var(--main-h1-color);
+}
+@media screen and (min-width: 768px) {
+  .hero-box__titel {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-box__titel {
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
 }
 .hero-box_btn {
   font-family: "Roboto", sans-serif;
@@ -541,9 +555,6 @@ address .logo2 {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-box {
     background-image: var(--bg-hero-gradient), url("../images/tab-bc-hero-2x-min.jpg");
-  }
-  .hero-box__titel {
-    font-size: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -671,7 +682,6 @@ address .logo2 {
   .team {
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 450px;
     justify-content: center;
     align-items: center;
   }
@@ -738,25 +748,6 @@ address .logo2 {
     flex-wrap: wrap;
     flex-basis: calc((100% - 30px) / 2);
     align-items: center;
-  }
-}
-@media (max-width: 767px) {
-  .team-photo-size {
-    width: 100%;
-    max-width: 460px;
-    max-height: 450px;
-  }
-}
-@media (max-width: 1199px) {
-  .team-photo-size {
-    width: 354px;
-    height: 374px;
-  }
-}
-@media (min-width: 1200px) {
-  .team-photo-size {
-    width: 270px;
-    height: 260px;
   }
 }
 .clients {
@@ -1198,11 +1189,9 @@ address .logo2 {
 
 .modal {
   position: absolute;
-  width: 450px;
-  min-height: 581px;
+  padding: 40px;
   top: 50%;
   left: 50%;
-  padding: 40px;
   transform: translate(-50%, -50%);
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

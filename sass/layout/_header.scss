@@ -6,6 +6,7 @@
 }
 
 .header-conteiner {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -20,7 +21,7 @@
   width: 24px;
   height: 16px;
   top: 22px;
-  left: 445px;
+  right: 23px;
   border: none;
   background-color: transparent;
 }

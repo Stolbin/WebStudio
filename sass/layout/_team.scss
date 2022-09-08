@@ -19,7 +19,6 @@
   .team {
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 450px;
     justify-content: center;
     align-items: center;
   }
@@ -88,27 +87,5 @@
     flex-wrap: wrap;
     flex-basis: calc((100% - 30px) / 2);
     align-items: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .team-photo-size {
-    width: 100%;
-    max-width: 460px;
-    max-height: 450px;
-  }
-}
-
-@media (max-width: 1199px) {
-  .team-photo-size {
-    width: 354px;
-    height: 374px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .team-photo-size {
-    width: 270px;
-    height: 260px;
   }
 }

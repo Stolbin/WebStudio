@@ -19,7 +19,7 @@
   &__titel {
     width: 360px;
     font-weight: 900;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
@@ -27,6 +27,13 @@
     margin-right: auto;
     text-transform: uppercase;
     color: var(--main-h1-color);
+    @include table {
+      font-size: 26px;
+    }
+    @include desktop {
+      font-size: 44px;
+      line-height: calc(60 / 44);
+    }
   }
   &_btn {
     font-family: "Roboto", sans-serif;
@@ -65,9 +72,6 @@
     @include retina {
       background-image: var(--bg-hero-gradient),
         url("../images/tab-bc-hero-2x-min.jpg");
-      &__titel {
-        font-size: 26px;
-      }
     }
   }
 }

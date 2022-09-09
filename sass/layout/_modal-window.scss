@@ -26,9 +26,15 @@
     transform: translate(-50%, -50%);
     min-height: 0px;
   }
-  //   @include mobile {
-  //     width: 450px;
-  //   }
+  @media (min-width: 375px) {
+    width: 345px;
+  }
+  @media (min-width: 425px) {
+    width: 395px;
+  }
+  @include mobile {
+    width: 450px;
+  }
   @include desktop {
     width: 528px;
   }

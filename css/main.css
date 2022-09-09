@@ -355,6 +355,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+@media (max-width: 479px) {
+  .mob-menu > .container-menu {
+    padding: 40px 20px;
+  }
+}
 
 .btn-menu-close {
   position: absolute;
@@ -392,6 +397,11 @@ body {
   letter-spacing: 0.02em;
   color: #212121;
 }
+@media (max-width: 479px) {
+  .menu-nav__link {
+    font-size: 30px;
+  }
+}
 
 .current-mob {
   color: var(--current-page-color);
@@ -408,12 +418,22 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+@media (max-width: 479px) {
+  .menu-contacts__tel {
+    font-size: 25px;
+  }
+}
 .menu-contacts__mail {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+}
+@media (max-width: 479px) {
+  .menu-contacts__mail {
+    font-size: 16px;
+  }
 }
 
 .menu-con-item:not(:last-child) {
@@ -422,6 +442,7 @@ body {
 
 .menu-soc {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 48px;
 }
@@ -435,6 +456,11 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+@media (max-width: 479px) {
+  .menu-soc__link {
+    font-size: 14px;
+  }
 }
 
 .header-logo {
@@ -1207,6 +1233,21 @@ address .logo2 {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%);
   min-height: 0px;
+}
+@media (min-width: 375px) {
+  .modal {
+    width: 345px;
+  }
+}
+@media (min-width: 425px) {
+  .modal {
+    width: 395px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {

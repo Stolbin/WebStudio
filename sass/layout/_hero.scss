@@ -19,7 +19,7 @@
   &__titel {
     width: 260px;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.06em;
@@ -34,6 +34,7 @@
       font-size: 26px;
     }
     @include desktop {
+      width: 696px;
       font-size: 44px;
       line-height: calc(60 / 44);
     }

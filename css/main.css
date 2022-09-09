@@ -524,7 +524,7 @@ address .logo2 {
 .hero-box__titel {
   width: 260px;
   font-weight: 900;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
@@ -545,6 +545,7 @@ address .logo2 {
 }
 @media screen and (min-width: 1200px) {
   .hero-box__titel {
+    width: 696px;
     font-size: 44px;
     line-height: 1.3636363636;
   }
@@ -870,7 +871,7 @@ address .logo2 {
   color: var(--hover-focus-color);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .footer-up {
     display: block;
     margin-left: auto;
@@ -1292,6 +1293,13 @@ address .logo2 {
   color: #212121;
   margin-bottom: 12px;
 }
+@media (max-width: 400px) {
+  .titel-modal {
+    width: 220px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
 
 .input-field {
   margin-bottom: 10px;
@@ -1334,6 +1342,11 @@ address .logo2 {
   padding: 11px 12px 11px 42px;
   transition: border-color 250ms var(--cubic-hover);
 }
+@media (max-width: 400px) {
+  .input-form-modal {
+    height: 30px;
+  }
+}
 .input-form-modal:focus {
   border-color: var(--hover-focus-color);
 }
@@ -1343,6 +1356,11 @@ address .logo2 {
   padding-top: 12px;
   resize: none;
   padding-left: 12px;
+}
+@media (max-width: 400px) {
+  .textarea-form-modal {
+    height: 80px;
+  }
 }
 .textarea-form-modal::placeholder {
   font-weight: 400;
@@ -1420,6 +1438,11 @@ address .logo2 {
 
 .input-field-checkbox {
   margin-bottom: 30px;
+}
+@media (max-width: 400px) {
+  .input-field-checkbox {
+    margin-bottom: 20px;
+  }
 }
 
 .btn-form {

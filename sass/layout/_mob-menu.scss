@@ -93,6 +93,9 @@
 }
 
 .menu-soc {
+  @media (max-width: 479px) {
+    gap: 5px;
+  }
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -107,8 +110,9 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196f3;
-    @media (max-width: 479px) {
-      font-size: 14px;
+    @media (max-width: 400px) {
+      padding-right: 5px;
+      font-size: 12px;
     }
   }
 }

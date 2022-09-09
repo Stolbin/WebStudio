@@ -446,6 +446,11 @@ body {
   gap: 10px;
   margin-bottom: 48px;
 }
+@media (max-width: 479px) {
+  .menu-soc {
+    gap: 5px;
+  }
+}
 .menu-soc-item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -457,9 +462,10 @@ body {
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-@media (max-width: 479px) {
+@media (max-width: 400px) {
   .menu-soc__link {
-    font-size: 14px;
+    padding-right: 5px;
+    font-size: 12px;
   }
 }
 

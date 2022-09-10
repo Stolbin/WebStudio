@@ -1021,9 +1021,18 @@ address .logo2 {
   }
 }
 
+.link-port-proj {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 250ms var(--cubic-hover);
+}
+.link-port-proj:hover, .link-port-proj:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .portfolio-prj {
   position: relative;
-  display: block;
   overflow: hidden;
 }
 
@@ -1072,17 +1081,6 @@ address .logo2 {
 }
 .port-proj-item:hover .text-proj, .port-proj-item:focus .text-proj {
   transform: translateY(0%);
-}
-
-.link-port-proj {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: box-shadow 250ms var(--cubic-hover);
-}
-.link-port-proj:hover, .link-port-proj:focus {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .input-footer {
@@ -1226,7 +1224,7 @@ address .logo2 {
 
 .modal {
   position: absolute;
-  padding: 40px;
+  padding: 40px 15px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -1235,6 +1233,11 @@ address .logo2 {
   border: none;
   border-radius: 4px;
   transition: transform 250ms var(--cubic-hover), min-height 250ms var(--cubic-hover);
+}
+@media (min-width: 479px) {
+  .modal {
+    padding: 40px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%);
@@ -1291,19 +1294,35 @@ address .logo2 {
 }
 
 .titel-modal {
+  width: 280px;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  letter-spacing: 0.03em;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
 }
-@media (max-width: 400px) {
+@media (min-width: 375px) {
   .titel-modal {
-    width: 220px;
-    font-weight: 700;
+    width: 100%;
     font-size: 18px;
+  }
+}
+@media (min-width: 425px) {
+  .titel-modal {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .titel-modal {
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -1341,16 +1360,16 @@ address .logo2 {
 
 .input-form-modal {
   width: 100%;
-  height: 40px;
+  height: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   padding: 11px 12px 11px 42px;
   transition: border-color 250ms var(--cubic-hover);
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .input-form-modal {
-    height: 30px;
+    height: 40px;
   }
 }
 .input-form-modal:focus {
@@ -1358,14 +1377,14 @@ address .logo2 {
 }
 
 .textarea-form-modal {
-  height: 120px;
+  height: 80px;
   padding-top: 12px;
   resize: none;
   padding-left: 12px;
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .textarea-form-modal {
-    height: 80px;
+    height: 120px;
   }
 }
 .textarea-form-modal::placeholder {
@@ -1394,10 +1413,20 @@ address .logo2 {
 
 .box-icon-input {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+}
+@media (min-width: 375px) {
+  .box-icon-input {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .box-icon-input {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .box-icon-input {
@@ -1406,16 +1435,22 @@ address .logo2 {
 }
 
 .box-icon-input span {
-  width: 16px;
-  height: 15px;
+  width: 13px;
+  height: 12px;
   border: 1.8px solid #212121;
   border-radius: 3px;
   margin-right: 8px;
   display: inline-flex;
   align-items: center;
-  justify-content: baseline;
+  justify-content: center;
   fill: transparent;
   transition: background-color 250ms var(--cubic-hover), fill 250ms var(--cubic-hover), border-color 250ms var(--cubic-hover), filter 250ms var(--cubic-hover);
+}
+@media (min-width: 375px) {
+  .box-icon-input span {
+    width: 16px;
+    height: 15px;
+  }
 }
 .checkbox-form-modal:checked + .box-icon-input span {
   background-color: var(--hover-focus-color);
@@ -1429,12 +1464,22 @@ address .logo2 {
 
 .modal-terms {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 9px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
   color: #2196f3;
   margin-left: 4px;
+}
+@media (min-width: 375px) {
+  .modal-terms {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .modal-terms {
+    font-size: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal-terms {
@@ -1443,11 +1488,11 @@ address .logo2 {
 }
 
 .input-field-checkbox {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
-@media (max-width: 400px) {
+@media (min-width: 400px) {
   .input-field-checkbox {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1456,8 +1501,8 @@ address .logo2 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  padding: 10px 56px;
-  font-size: 16px;
+  padding: 5px 36px;
+  font-size: 14px;
   line-height: 1.88;
   display: flex;
   align-items: center;
@@ -1467,6 +1512,18 @@ address .logo2 {
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms var(--cubic-hover);
+}
+@media (min-width: 425px) {
+  .btn-form {
+    padding: 8px 50px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-form {
+    padding: 10px 55px;
+    font-size: 16px;
+  }
 }
 .btn-form:hover, .btn-form:focus {
   background-color: var(--main-hero-btn-hover-background-color);

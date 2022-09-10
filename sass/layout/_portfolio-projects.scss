@@ -21,9 +21,20 @@
   }
 }
 
+.link-port-proj {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 250ms var(--cubic-hover);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
 .portfolio-prj {
   position: relative;
-  display: block;
   overflow: hidden;
 }
 .port-proj-text {
@@ -71,18 +82,5 @@
   .port-proj-item:hover &,
   .port-proj-item:focus & {
     transform: translateY(0%);
-  }
-}
-
-.link-port-proj {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  transition: box-shadow 250ms var(--cubic-hover);
-  &:hover,
-  &:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }

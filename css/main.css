@@ -1079,10 +1079,11 @@ address .logo2 {
   color: #ffffff;
   overflow: auto;
   transform: translateY(101%);
-  transition: transform 250ms var(--cubic-hover);
+  transition: transform 350ms var(--cubic-hover);
 }
 .port-proj-item:hover .text-proj, .port-proj-item:focus .text-proj {
   transform: translateY(0%);
+  transition: transform 350ms var(--cubic-hover);
 }
 
 .input-footer {

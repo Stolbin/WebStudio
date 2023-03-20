@@ -3,9 +3,11 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 40px;
+
   @include table {
     margin-top: 30px;
   }
+
   @include desktop {
     margin-top: 50px;
   }
@@ -13,9 +15,11 @@
 
 .port-proj-item {
   background: var(--heade-title-background-color);
+
   @include table {
     flex-basis: calc((100% - 30px) / 2);
   }
+
   @include desktop {
     flex-basis: calc((100% - 60px) / 3);
   }
@@ -26,6 +30,7 @@
   flex-direction: column;
   height: 100%;
   transition: box-shadow 250ms var(--cubic-hover);
+
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -37,6 +42,7 @@
   position: relative;
   overflow: hidden;
 }
+
 .port-proj-text {
   flex-grow: 1;
   padding: 20px 24px;
@@ -78,9 +84,11 @@
   color: #ffffff;
   overflow: auto;
   transform: translateY(101%);
-  transition: transform 250ms var(--cubic-hover);
+  transition: transform 350ms var(--cubic-hover);
+
   .port-proj-item:hover &,
   .port-proj-item:focus & {
     transform: translateY(0%);
+    transition: transform 350ms var(--cubic-hover);
   }
 }

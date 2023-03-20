@@ -764,19 +764,21 @@ address .logo2 {
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms var(--cubic-hover);
+  transition: background-color 450ms var(--cubic-hover);
 }
 .team-soc-link:hover, .team-soc-link:focus {
   background-color: var(--main-hero-btn-background-color);
+  transition: background-color 450ms var(--cubic-hover);
   fill: currentColor;
 }
 
 .team-soc-icon {
   fill: var(--fill-logo-icons-color);
-  transition: fill 250ms var(--cubic-hover);
+  transition: fill 450ms var(--cubic-hover);
 }
 .team-soc-link:hover .team-soc-icon, .team-soc-link:focus .team-soc-icon {
   fill: var(--heade-title-background-color);
+  transition: fill 450ms var(--cubic-hover);
 }
 
 @media screen and (min-width: 768px) {

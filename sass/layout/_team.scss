@@ -5,6 +5,7 @@
 
 .team {
   display: flex;
+
   &__photo {
     display: block;
     background: var(--heade-title-background-color);
@@ -18,16 +19,18 @@
 @media (max-width: 767px) {
   .team {
     flex-wrap: wrap;
-    // gap: 30px;
     justify-content: center;
     align-items: center;
   }
+
   .team__photo:not(:last-child) {
     margin-bottom: 30px;
   }
 }
+
 .team-box {
   padding: 30px 0px;
+
   &__name {
     font-weight: 500;
     font-size: 16px;
@@ -37,6 +40,7 @@
     color: var(--main-title-color);
     margin-bottom: 10px;
   }
+
   &__job-title {
     font-weight: 400;
     font-size: 16px;
@@ -64,20 +68,24 @@
   background-repeat: no-repeat;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms var(--cubic-hover);
+  transition: background-color 450ms var(--cubic-hover);
+
   &:hover,
   &:focus {
     background-color: var(--main-hero-btn-background-color);
+    transition: background-color 450ms var(--cubic-hover);
     fill: currentColor;
   }
 }
 
 .team-soc-icon {
   fill: var(--fill-logo-icons-color);
-  transition: fill 250ms var(--cubic-hover);
+  transition: fill 450ms var(--cubic-hover);
+
   .team-soc-link:hover &,
   .team-soc-link:focus & {
     fill: var(--heade-title-background-color);
+    transition: fill 450ms var(--cubic-hover);
   }
 }
 
